@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.craftablescience.animetracker",
+    "sha256_cert_fingerprints":
+    ["82:4C:4E:A8:2E:31:28:97:D3:A9:5B:C1:C9:E8:40:3C:3B:4F:F1:49:43:B5:6C:4E:BB:A4:6C:87:6B:32:9E:7E"]
+  }
+}]
