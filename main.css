@@ -1,5 +1,11 @@
+#navbar {
+  width: 100%;
+  height: 20%;
+}
+
 #navbar ul {
   list-style-type: none;
+  float: center;
 }
 
 #navbar ul li a {
