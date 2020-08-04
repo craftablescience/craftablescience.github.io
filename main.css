@@ -21,6 +21,7 @@ body {
   text-decoration: none;
   background-color: #6F8DC3;
   color: white;
+  padding: 8px;
   float: center;
   display: block;
 }
