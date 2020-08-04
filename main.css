@@ -19,6 +19,8 @@ body {
   text-decoration: none;
   background-color: #6F8DC3;
   color: white;
+  margin-top: 4px;
+  border-radius: 8px;
   padding: 10px 0px 10px 0px;
   display: inline-block;
 }
