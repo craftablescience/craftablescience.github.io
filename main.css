@@ -6,21 +6,18 @@ body {
   width: 100%;
   height: 20%;
   background-color: grey;
-}
-
-#navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-#navbar ul li {
+#navbar li {
   float: left;
   display: inline;
 }
 
-#navbar ul li a {
+#navbar li a {
   text-decoration: none;
   background-color: #6F8DC3;
   color: white;
