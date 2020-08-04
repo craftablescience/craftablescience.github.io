@@ -37,7 +37,7 @@ body {
 }
 
 #navbar li a:hover {
-  background-color: dark-grey;
+  background-color: green;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
