@@ -5,6 +5,20 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@keyframes navbarLinkHover {
+  0% {
+    margin-top: 4px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  25% {
+    border-radius: 8px;
+  }
+  100% {
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+}
+
 #navbar {
   width: 100%;
   background-color: grey;
