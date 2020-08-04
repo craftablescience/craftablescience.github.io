@@ -13,10 +13,13 @@ body {
   float: center;
 }
 
+#navbar ul li {
+  display: inline;
+}
+
 #navbar ul li a {
   text-decoration: none;
   background-color: #6F8DC3;
   color: white;
-  display: inline;
   float: center;
 }
