@@ -4,22 +4,22 @@ body {
 
 #navbar {
   width: 100%;
-  height: 20%;
   background-color: grey;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
 
 #navbar li {
   display: inline;
+  padding: 0px;
 }
 
 #navbar li a {
   text-decoration: none;
   background-color: #6F8DC3;
   color: white;
-  padding: 8px;
+  padding: 10px 0px 10px 0px;
   display: inline-block;
 }
