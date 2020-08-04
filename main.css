@@ -27,7 +27,7 @@ body {
   border-radius: 8px;
   padding: 10px 8px 10px 8px;
   display: inline-block;
-  transition: margin-bottom 0.5s;
+  transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 #navbar li a:hover {
-  margin-bottom: 20px;
-  transition: margin-bottom 0.5s;
+  background-color: dark-grey;
+  transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
