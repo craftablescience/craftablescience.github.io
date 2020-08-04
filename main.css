@@ -10,10 +10,10 @@ body {
 
 #navbar ul {
   list-style-type: none;
-  float: center;
 }
 
 #navbar ul li {
+  float: center;
   display: inline;
 }
 
@@ -22,4 +22,5 @@ body {
   background-color: #6F8DC3;
   color: white;
   float: center;
+  display: block;
 }
