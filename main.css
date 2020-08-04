@@ -4,6 +4,7 @@
 
 #navber ul li {
   float: left;
+  display: inline;
 }
 
 #navbar ul li a {
