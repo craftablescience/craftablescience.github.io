@@ -5,20 +5,6 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-@keyframes navbarLinkHover {
-  0% {
-    margin-top: 4px;
-    border-radius: 8px 8px 0px 0px;
-  }
-  25% {
-    border-radius: 8px;
-  }
-  100% {
-    margin-top: 8px;
-    border-radius: 8px;
-  }
-}
-
 #navbar {
   width: 100%;
   background-color: grey;
@@ -40,6 +26,7 @@ body {
   border-radius: 8px 8px 0px 0px;
   padding: 10px 8px 10px 8px;
   display: inline-block;
+  transition: margin-top 1s;
 }
 
 #navbar li a.active {
@@ -48,7 +35,5 @@ body {
 }
 
 #navbar li a:hover {
-  animation-name: navbarLinkHover;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  margin-top: 8px;
 }
