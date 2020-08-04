@@ -38,7 +38,6 @@ body {
 
 #navbar li a:hover {
   margin-bottom: 20px;
-  border-radius: 8px;
   transition: margin-bottom 0.5s;
   transition-timing-function: ease-in-out;
 }
