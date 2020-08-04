@@ -20,7 +20,7 @@ body {
   background-color: #6F8DC3;
   color: white;
   margin-top: 4px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   padding: 10px 8px 10px 8px;
   display: inline-block;
 }
