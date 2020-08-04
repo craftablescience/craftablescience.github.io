@@ -9,11 +9,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  text-align: center;
 }
 
 #navbar li {
-  float: left;
   display: inline;
 }
 
@@ -22,6 +21,5 @@ body {
   background-color: #6F8DC3;
   color: white;
   padding: 8px;
-  float: center;
-  display: block;
+  display: inline-block;
 }
