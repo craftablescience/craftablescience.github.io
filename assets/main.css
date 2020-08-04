@@ -7,7 +7,7 @@ body {
 
 #navbar {
   width: 100%;
-  background-color: grey;
+  background-image: url("/assets/tiled_navbar.png");
   list-style-type: none;
   margin: 0px;
   padding: 0px;
