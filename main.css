@@ -46,3 +46,8 @@ body {
   background-color: white;
   color: black;
 }
+
+#navbar li a:hover {
+  animation-name: navbarLinkHover;
+  animation-duration: 1s;
+}
