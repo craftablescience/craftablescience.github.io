@@ -36,4 +36,5 @@ body {
 
 #navbar li a:hover {
   margin-top: 8px;
+  transition: margin-top 1s;
 }
