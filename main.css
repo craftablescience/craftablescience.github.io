@@ -27,3 +27,8 @@ body {
   padding: 10px 8px 10px 8px;
   display: inline-block;
 }
+
+#navbar li a.active {
+  background-color: white;
+  color: black;
+}
