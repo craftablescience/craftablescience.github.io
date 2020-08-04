@@ -2,6 +2,10 @@
   list-style-type: none;
 }
 
+#navber ul li {
+  float: left;
+}
+
 #navbar ul li a {
   background-color: #6F8DC3;
   color: white;
