@@ -50,4 +50,5 @@ body {
 #navbar li a:hover {
   animation-name: navbarLinkHover;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
