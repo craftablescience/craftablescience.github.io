@@ -27,7 +27,7 @@ body {
   border-radius: 8px 8px 0px 0px;
   padding: 10px 8px 10px 8px;
   display: inline-block;
-  transition: margin-bottom 0.5s;
+  transition: margin-bottom 0.5s, border-radius 8px;
   transition-timing-function: ease-in-out;
 }
 
@@ -38,6 +38,6 @@ body {
 
 #navbar li a:hover {
   margin-bottom: 32px;
-  transition: margin-bottom 0.5s;
+  transition: margin-bottom 0.5s, border-radius 8px 8px 0px 0px;
   transition-timing-function: ease-in-out;
 }
