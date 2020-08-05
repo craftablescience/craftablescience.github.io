@@ -19,7 +19,7 @@ body {
 .projectitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
-  display: inline-block;
+  display: inline;
   text-align: left;
   width: 90%;
   margin: 32px;
