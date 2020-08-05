@@ -17,7 +17,7 @@ body {
 }
 
 .projectitem {
-  background-color: #777777;
+  background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
   display: inline-block;
   text-align: left;
@@ -29,7 +29,7 @@ body {
 }
 
 .projectitem:hover {
-  background-color: steelblue;
+  background-color: #777777;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
