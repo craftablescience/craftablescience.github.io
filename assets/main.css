@@ -21,7 +21,7 @@ body {
 
 #navbar li a {
   text-decoration: none;
-  background-color: #6F8DC3;
+  background-color: #555555;
   color: white;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -33,7 +33,7 @@ body {
 }
 
 #navbar li a.active {
-  background-color: white;
+  background-color: #FFFFFF;
   color: black;
 }
 
