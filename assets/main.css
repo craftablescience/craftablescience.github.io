@@ -18,6 +18,12 @@ body {
 
 .projectitem {
   display: inline-block;
+  text-align: left;
+  margin: 32px;
+  border-radius: 8px;
+}
+.projectitem img {
+  float: left;
 }
 
 #navbar {
