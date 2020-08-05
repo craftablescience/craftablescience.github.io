@@ -34,7 +34,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-.projectitem img {
+.projectitem aside {
   float: left;
   margin: 0px 8px 0px 0px;
   padding: 0px;
