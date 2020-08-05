@@ -21,7 +21,7 @@ body {
 
 #navbar li a {
   text-decoration: none;
-  background-color: #555555;
+  background-color: #777777;
   color: white;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -38,13 +38,13 @@ body {
 }
 
 #navbar li a:hover {
-  background-color: blue;
+  background-color: dodgerblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
 
 #navbar li a.active:hover {
-  background-color: lightblue;
+  background-color: steelblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
