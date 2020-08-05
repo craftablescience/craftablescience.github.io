@@ -6,6 +6,16 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+#content {
+  margin: 0px;
+  padding: 8px;
+}
+
+#content ul {
+  list-style-type: none;
+  text-align: center;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
@@ -14,6 +24,8 @@ body {
   padding: 0px;
   text-align: center;
   font-size: 2em;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 #navbar li {
