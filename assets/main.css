@@ -38,13 +38,13 @@ body {
 }
 
 #navbar li a:hover {
-  background-color: dodgerblue;
+  background-color: steelblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
 
 #navbar li a.active:hover {
-  background-color: steelblue;
+  background-color: dodgerblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
