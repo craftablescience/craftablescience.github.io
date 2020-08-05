@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 body {
-  background-image: url("/assets/tiled_navbar.png");
+  background-image: url("/assets/tiled_backdrop.png");
   margin: 0px;
   font-family: "Noto Sans JP", sans-serif;
 }
