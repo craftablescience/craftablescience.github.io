@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+.projectitem {
+  display: inline-block;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
