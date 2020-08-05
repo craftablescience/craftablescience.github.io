@@ -17,6 +17,7 @@ body {
 }
 
 .projectitem {
+  background-color: #3366ff;
   display: inline-block;
   text-align: left;
   margin: 32px;
