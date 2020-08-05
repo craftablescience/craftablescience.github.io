@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 body {
+  background-image: url("/assets/tiled_navbar.png");
   margin: 0px;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -33,7 +34,8 @@ body {
 }
 
 #navbar li a.active {
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+  background-image: url("/assets/tiled_backdrop.png");
   margin-bottom: 0px;
   padding-bottom: 8px;
   border-radius: 8px 8px 0px 0px;
