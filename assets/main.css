@@ -20,7 +20,7 @@ body {
   display: inline;
 }
 
-#navbar li a:not(.active) {
+#navbar li a {
   text-decoration: none;
   background-color: #777777;
   color: white;
@@ -42,7 +42,7 @@ body {
   color: black;
 }
 
-#navbar li a:not(.active):hover {
+#navbar li a:hover {
   background-color: steelblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
