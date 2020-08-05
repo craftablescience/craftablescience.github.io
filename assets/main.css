@@ -36,9 +36,16 @@ body {
 
 .projectitem img {
   float: left;
-  margin: 0px 8px 0px 0px;
+  margin: 0px;
   padding: 0px;
   border-radius: 8px 0px 0px 8px;
+}
+
+.projectitem p {
+  color: white;
+  font-size: 1em;
+  margin: 0px 8px 0px 8px;
+  padding: 0px;
 }
 
 #navbar {
