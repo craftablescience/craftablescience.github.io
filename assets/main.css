@@ -6,6 +6,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+aside {
+  display: inline-grid;
+}
+
 #content {
   margin: 0px;
   padding: 8px;
@@ -19,7 +23,7 @@ body {
 .projectitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
-  display: inline;
+  display: grid;
   text-align: left;
   width: 90%;
   margin: 32px;
@@ -32,6 +36,7 @@ body {
   background-color: #777777;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
+  grid-gap: 0px 0px;
 }
 
 .projectitem aside {
@@ -39,6 +44,10 @@ body {
   margin: 0px 8px 0px 0px;
   padding: 0px;
   border-radius: 8px 0px 0px 8px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .projectitem aside img {
@@ -47,12 +56,27 @@ body {
   border-radius: 8px 0px 0px 8px;
 }
 
-.projectitem p {
+.projectitem.projectitemtitle {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.projectitem.projectitemdesc {
   color: white;
   font-size: 1em;
   margin: 0px;
   padding: 0px;
   text-align: justify;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 #navbar {
