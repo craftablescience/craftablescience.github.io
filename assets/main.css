@@ -56,7 +56,7 @@ aside {
   border-radius: 8px 0px 0px 8px;
 }
 
-.projectitem.projectitemtitle {
+.projectitem .projectitemtitle {
   color: white;
   margin: 0px;
   padding: 0px;
@@ -67,7 +67,7 @@ aside {
   grid-row-end: 2;
 }
 
-.projectitem.projectitemdesc {
+.projectitem .projectitemdesc {
   color: white;
   font-size: 1em;
   margin: 0px;
