@@ -46,6 +46,7 @@ body {
   font-size: 1em;
   margin: 0px 8px 0px 8px;
   padding: 0px;
+  text-align: justify;
 }
 
 #navbar {
