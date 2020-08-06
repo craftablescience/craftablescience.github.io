@@ -10,21 +10,6 @@ aside {
   display: inline-grid;
 }
 
-@media screen and (max-width: 600px) {
-  .projectitem {
-    display: block;
-  }
-  
-  .projectitem aside {
-    display: block;
-  }
-  
-  .projectitem aside img {
-    display: block;
-    border-radius: 8px 8px 0px 0px;
-  }
-}
-
 #content {
   margin: 0px;
   padding: 8px;
@@ -142,4 +127,19 @@ aside {
   background-color: dodgerblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .projectitem {
+    display: block;
+  }
+  
+  .projectitem aside {
+    display: block;
+  }
+  
+  .projectitem aside img {
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+  }
 }
