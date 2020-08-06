@@ -138,4 +138,8 @@ body {
     display: block;
     border-radius: 8px 8px 8px 0px;
   }
+  
+  .projectitem .projectitemdesc {
+    margin: 0px 16px 16px 16px;
+  }
 }
