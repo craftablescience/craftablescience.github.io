@@ -24,6 +24,7 @@ body {
   width: 90%;
   margin: 32px auto;
   border-radius: 8px;
+  cursor: help;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -33,7 +34,6 @@ body {
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
   grid-gap: 0px 0px;
-  cursor: help;
 }
 
 .projectitem aside {
