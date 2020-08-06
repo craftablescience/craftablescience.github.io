@@ -6,10 +6,6 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-aside {
-  display: inline-grid;
-}
-
 #content {
   margin: 0px;
   padding: 8px;
@@ -28,6 +24,7 @@ aside {
   width: 90%;
   margin: 32px auto;
   border-radius: 8px;
+  cursor: help;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -70,7 +67,7 @@ aside {
 .projectitem .projectitemdesc {
   color: white;
   font-size: 1em;
-  margin: 0px 16px 0px 0px;
+  margin: 0px 16px 16px 0px;
   padding: 0px;
   text-align: justify;
   grid-column-start: 2;
@@ -87,8 +84,7 @@ aside {
   padding: 0px;
   text-align: center;
   font-size: 2em;
-  position: -webkit-sticky;
-  position: sticky;
+  overflow: hidden;
 }
 
 #navbar li {
@@ -127,4 +123,23 @@ aside {
   background-color: dodgerblue;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .projectitem {
+    display: block;
+  }
+  
+  .projectitem aside {
+    display: block;
+  }
+  
+  .projectitem aside img {
+    display: block;
+    border-radius: 8px 8px 8px 0px;
+  }
+  
+  .projectitem .projectitemdesc {
+    margin: 0px 16px 16px 16px;
+  }
 }
