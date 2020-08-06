@@ -70,6 +70,7 @@ aside {
 .projectitem .projectitemdesc {
   color: white;
   font-size: 1em;
+  margin: 0px 8px 0px 0px;
   padding: 0px;
   text-align: justify;
   grid-column-start: 2;
