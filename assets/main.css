@@ -45,7 +45,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 .projectitem aside img {
@@ -56,12 +56,24 @@ body {
 
 .projectitem .projectitemtitle {
   color: white;
+  margin: 8px 0px 8px 0px;
   padding: 0px;
   text-align: center;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.projectitem .projectitemsubtitle {
+  color: #DDDDDD;
+  margin: 8px 0px 8px 0px;
+  padding: 0px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .projectitem .projectitemdesc {
@@ -72,8 +84,8 @@ body {
   text-align: justify;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .projectitem .projectitemdesc a {
@@ -130,7 +142,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .projectitem {
     display: block;
   }
