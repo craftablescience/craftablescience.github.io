@@ -56,8 +56,8 @@ body {
 
 .projectitem .projectitemtitle {
   color: white;
+  margin: 8px 0px 8px 0px;
   padding: 0px;
-  margin: 0px;
   text-align: center;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -67,7 +67,7 @@ body {
 
 .projectitem .projectitemsubtitle {
   color: #DDDDDD;
-  margin: 0px;
+  margin: 8px 0px 8px 0px;
   padding: 0px;
   text-align: center;
   grid-column-start: 2;
