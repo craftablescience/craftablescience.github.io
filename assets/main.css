@@ -76,6 +76,11 @@ body {
   grid-row-end: 3;
 }
 
+.projectitem .projectitemdesc a {
+  text-decoration: underline dotted;
+  color: #EEEEEE;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
