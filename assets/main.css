@@ -93,6 +93,17 @@ body {
   color: #EEEEEE;
 }
 
+.contactitem {
+  text-align: center;
+  margin: 32px auto;
+}
+
+.contactitem .contactitemlogo {
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
