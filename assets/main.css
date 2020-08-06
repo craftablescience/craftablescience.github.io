@@ -58,7 +58,6 @@ aside {
 }
 
 .projectitem .projectitemtitle {
-  display: inline-grid;
   color: white;
   padding: 0px;
   text-align: center;
