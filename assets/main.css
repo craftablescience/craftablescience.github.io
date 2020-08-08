@@ -101,6 +101,7 @@ body {
   width: 64px;
   height: 64px;
   vertical-align: middle;
+  margin-right: 16px;
 }
 
 #navbar {
