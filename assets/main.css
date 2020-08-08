@@ -109,6 +109,11 @@ body {
   padding: 8px;
 }
 
+.contactdivider {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
