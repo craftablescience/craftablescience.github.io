@@ -41,7 +41,6 @@ body {
   float: left;
   margin: 0px 8px 0px 0px;
   padding: 0px;
-  border-radius: 8px 0px 0px 8px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
