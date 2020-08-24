@@ -25,7 +25,8 @@
             {method: 'GET',
              mode: 'no-cors',
              credentials: 'omit',
-             headers: {'Content-Type': 'application/json'}})
+             headers: {'Accept': 'application/json',
+                       'Content-Type': 'application/json'}})
         .then(
           function(response) {
             if (response.status !== 200) {
