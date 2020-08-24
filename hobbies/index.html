@@ -16,34 +16,6 @@
     </ul>
     <div id="content">
       <h1 style="color: red; text-align: center;">UNDER CONSTRUCTION</h1>
-      <div class="duolingo-content">
-        <h1 id="streak-count"><noscript>JavaScript disabled :(</noscript></h1>
-      </div>
     </div>
-    <script>
-      fetch('https://www.duolingo.com/api/1/users/show?username=craftablescience',
-            {method: 'GET',
-             mode: 'no-cors',
-             credentials: 'include',
-             headers: {'Accept': 'application/json',
-                       'Content-Type': 'application/json'}})
-        .then(
-          function(response) {
-            if (response.status !== 200) {
-              console.log('Looks like there was a problem. Status Code: ' +
-                          response.status);
-              return;
-            }
-
-            // Examine the text in the response
-            response.json().then(function(data) {
-              console.log(data);
-            });
-          }
-        ).catch(function(err) {
-          console.log('Fetch Error :-S', err);
-        }
-      );
-    </script>
   </body>
 </html>
