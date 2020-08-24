@@ -25,8 +25,7 @@
             {method: 'GET',
              mode: 'no-cors',
              credentials: 'omit',
-             headers: {'Content-Type': 'application/json'},
-             body: JSON.stringify(data)})
+             headers: {'Content-Type': 'application/json'}})
         .then(
           function(response) {
             if (response.status !== 200) {
