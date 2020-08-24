@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/assets/main.css"/>
     <link rel="icon" type="image/x-icon" href="https://craftablescience.github.io/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
      <ul id="navbar">
@@ -16,6 +17,16 @@
     </ul>
     <div id="content">
       <h1 style="color: red; text-align: center;">UNDER CONSTRUCTION</h1>
+      <div class="duolingo-content">
+        <h1 id="streak-count"><noscript>JavaScript disabled :(</noscript></h1>
+      </div>
     </div>
+    <script>
+      $.getJSON('https://www.duolingo.com/users/craftablescience', function(data) {
+        var text = `${data.language_data.ja.streak}`
+        $("#streak-count").html(text);
+      });
+    });
+    </script>
   </body>
 </html>
