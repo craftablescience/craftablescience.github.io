@@ -27,6 +27,7 @@ body {
   cursor: help;
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
+  display: inline-grid;
 }
 
 .aboutitem:hover {
@@ -36,11 +37,22 @@ body {
 }
 
 .aboutitem img {
-  display: block;
   height: 80vh;
   max-width: 100%;
   object-fit: contain;
   border-radius: 8px 0px 0px 8px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.aboutitem div {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 16px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/tiled_backdrop.png");
+  border-radius: 8px;
 }
 
 .projectitem {
