@@ -162,7 +162,7 @@ body {
   padding: 0px;
   text-align: center;
   font-size: 2em;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #navbar li {
