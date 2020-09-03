@@ -49,8 +49,8 @@ body {
 .aboutitem div {
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 16px -16px 16px -16px;
-  width: 100%;
+  margin: 16px 16px 16px 16px;
+  padding-left: 16px;
   background-image: url("/assets/tiled_backdrop.png");
   border-radius: 8px;
 }
