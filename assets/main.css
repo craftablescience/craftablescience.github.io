@@ -200,12 +200,12 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  .aboutitem div h1 {
-    text-align: center;
+  .aboutitem img {
+    display: none;
   }
   
-  .aboutitem div img {
-    display: none;
+  .aboutitem div h1 {
+    text-align: center;
   }
   
   .projectitem {
