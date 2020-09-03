@@ -7,6 +7,6 @@ function calculate_age(dob) {
 
 const AGE = calculate_age(new Date(2003, 5, 14));
 
-for (node in document.getElementsByClassName("var-changer")) {
+Array.prototype.forEach.call(document.getElementsByClassName("var-changer"), function(node) {
     node.innerHTML = node.innerHTML.replace("AGE_VAR", parseInt(AGE));
-}
+});
