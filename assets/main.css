@@ -47,6 +47,10 @@ body {
   border-radius: 8px;
 }
 
+.aboutitem div p {
+  text-align: justify;
+}
+
 .projectitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
