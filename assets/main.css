@@ -19,10 +19,9 @@ body {
 .aboutitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
-  text-align: left;
   width: 90%;
   height: 90%;
-  margin: 32px auto;
+  margin: 32px auto auto auto;
   border-radius: 8px;
   cursor: help;
   display: inline-grid;
@@ -45,6 +44,10 @@ body {
   padding: 0px 16px;
   background-image: url("/assets/tiled_backdrop.png");
   border-radius: 8px;
+}
+
+.aboutitem div h1 {
+  text-align: left;
 }
 
 .aboutitem div p {
