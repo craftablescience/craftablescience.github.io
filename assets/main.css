@@ -25,16 +25,8 @@ body {
   margin: 32px auto;
   border-radius: 8px;
   cursor: help;
-  transition: background-color 0.5s;
-  transition-timing-function: ease-in-out;
   display: inline-grid;
   grid-gap: 0px;
-}
-
-.aboutitem:hover {
-  background-color: #777777;
-  transition: background-color 0.5s;
-  transition-timing-function: ease-in-out;
 }
 
 .aboutitem img {
