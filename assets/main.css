@@ -27,7 +27,7 @@ body {
 
 .aboutitem img {
   display: block;
-  height: 100vh;
+  height: 80vh;
   max-width: 100%;
   object-fit: contain;
   border-radius: 8px;
