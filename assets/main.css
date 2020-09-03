@@ -150,6 +150,10 @@ body {
   font-size: 1.3em;
 }
 
+.mobile-break {
+  display: none;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
@@ -224,5 +228,9 @@ body {
   
   .projectitem .projectitemdesc {
     margin: 0px 16px 16px 16px;
+  }
+  
+  .mobile-break {
+    display: block;
   }
 }
