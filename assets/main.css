@@ -28,6 +28,7 @@ body {
   transition: background-color 0.5s;
   transition-timing-function: ease-in-out;
   display: inline-grid;
+  grid-gap: 0px;
 }
 
 .aboutitem:hover {
