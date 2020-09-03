@@ -9,6 +9,6 @@ const AGE = calculate_age(new Date(2003, 5, 14));
 
 let nodes = document.getElementsByClassName("var-changer");
 
-nodes.forEach(function(node) {
+for (node in nodes) {
     node.innerHTML = node.innerHTML.replace("AGE_VAR", parseInt(AGE));
-});
+}
