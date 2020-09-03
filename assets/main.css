@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+#noscript-banner {
+  margin: 16px;
+}
+
 .aboutitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
