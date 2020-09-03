@@ -19,7 +19,7 @@ body {
 .aboutitem {
   background-color: steelblue;
   box-shadow: 0px 0px 16px #666666;
-  margin: 32px auto auto auto;
+  margin: 16px auto auto auto;
   border-radius: 8px;
   cursor: help;
   display: inline-grid;
