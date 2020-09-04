@@ -1,17 +1,38 @@
 // Made using https://www.w3schools.com/howto/howto_js_slideshow.asp
 
+var pictures = ["/assets/about/rare_photo_of_me_in_tie.jpg",
+                "/assets/about/coding.png",
+                "/assets/about/cr_swim_back.jpg",
+                "/assets/about/cr_swim_front.jpg"];
+
+var companion = document.getElementById("slideshow-companion");
+
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlide(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function prevSlide() {
+    showSlide(slideIndex -= 1);
+    switch (slideIndex) {
+        case 1:
+            companion.src = pictures[0];
+            break;
+        case 2:
+            companion.src = pictures[1];
+        case 3:
+            let flip = Math.random();
+            if (flip > 0.5) {
+                companion.src = pictures[2];
+            } else {
+                companion.src = pictures[3];
+            }
+    }
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function nextSlide() {
+    showSlide(slideIndex += 1);
 }
 
-function showSlides(n) {
+function showSlide(n) {
     var i;
     var slides = document.getElementsByClassName("slide");
     
