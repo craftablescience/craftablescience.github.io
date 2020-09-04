@@ -5,7 +5,11 @@
 }
 
 .slide {
-  display: none
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .slideshow-img {
@@ -54,13 +58,6 @@
 
 .slideshow-active, .slideshow-dot:hover {
   background-color: #717171;
-}
-
-.slideshow-fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes slideshow-fade {
