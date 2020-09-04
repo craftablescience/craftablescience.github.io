@@ -12,20 +12,6 @@ showSlide(slideIndex);
 
 function prevSlide() {
     showSlide(slideIndex -= 1);
-    switch (slideIndex) {
-        case 1:
-            companion.src = pictures[0];
-            break;
-        case 2:
-            companion.src = pictures[1];
-        case 3:
-            let flip = Math.random();
-            if (flip > 0.5) {
-                companion.src = pictures[2];
-            } else {
-                companion.src = pictures[3];
-            }
-    }
 }
 
 function nextSlide() {
@@ -47,4 +33,19 @@ function showSlide(n) {
         slides[i].style.display = "none";  
     }
     slides[slideIndex-1].style.display = "block";
+    
+    switch (slideIndex) {
+        case 1:
+            companion.src = pictures[0];
+            break;
+        case 2:
+            companion.src = pictures[1];
+        case 3:
+            let flip = Math.random();
+            if (flip > 0.5) {
+                companion.src = pictures[2];
+            } else {
+                companion.src = pictures[3];
+            }
+    }
 }
