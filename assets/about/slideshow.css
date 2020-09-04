@@ -6,10 +6,6 @@
 
 .slide {
   display: none;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
 
 .slideshow-container {
@@ -26,7 +22,7 @@
   color: black;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.5s ease;
   border-radius: 4px;
   user-select: none;
   background-color: rgba(0,0,0,0.25);
@@ -38,6 +34,7 @@
 
 .slideshow-prev:hover, .slideshow-next:hover {
   background-color: rgba(0,0,0,0.75);
+  color: white;
 }
 
 .slideshow-text {
@@ -52,24 +49,6 @@
 
 .slideshow-active, .slideshow-dot:hover {
   background-color: #717171;
-}
-
-@-webkit-keyframes slideshow-fade {
-  from {
-    opacity: .4;
-  } 
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideshow-fade {
-  from {
-    opacity: .4;
-  } 
-  to {
-    opacity: 1;
-  }
 }
 
 @media only screen and (max-width: 300px) {
