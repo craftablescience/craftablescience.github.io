@@ -21,7 +21,6 @@ body {
 
 #slideshow-companion {
   height: 80vh;
-  max-width: 100%;
   object-fit: contain;
   padding: 16px;
   grid-column-start: 1;
