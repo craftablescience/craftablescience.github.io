@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="https://craftablescience.github.io/favicon.ico"/>
   </head>
   <body>
-     <ul id="navbar">
+    <ul id="navbar">
       <li><a class="active" href="/">About</a></li>
       <li><a href="/projects">Projects</a></li>
       <li><a href="/hobbies">Hobbies</a></li>
@@ -17,11 +17,27 @@
     </ul>
     <noscript id="noscript-banner"><img src="/assets/noscript.png" alt="Please enable JavaScript" /></noscript>
     <div id="content">
+      <p class="var-changer">I am AGE_VAR.</p>
       <div class="aboutitem">
         <img src="/assets/about/rare_photo_of_me_in_tie.jpg" alt="Photo of me in a tie" />
-        <div>
-          <h1>Brendan Lewis</h1>
-          <p class="var-changer">I am AGE_VAR. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat lacus, sodales vel tellus eu, sodales pulvinar velit. Sed viverra at velit vitae venenatis. Nam pretium dapibus urna et tincidunt. Maecenas sit amet mauris vel neque tincidunt posuere. Cras mattis risus id magna porttitor, sit amet tincidunt ligula pellentesque. Nunc nisi metus, egestas vitae dui non, condimentum posuere est. Sed venenatis laoreet metus ac ultricies. Mauris congue gravida euismod. Cras maximus eros in mauris eleifend rutrum id in dolor. Pellentesque semper metus eget pulvinar suscipit. Cras lacinia libero nec auctor hendrerit. Mauris leo lacus, interdum laoreet mi nec, lacinia suscipit lectus. Praesent sodales nisl ac neque pharetra, cursus blandit nisl sodales. Curabitur eros est, molestie luctus feugiat a, pellentesque rutrum dolor. Nunc quam nunc, luctus vitae hendrerit rutrum, tempor id urna. Aenean sed mauris nec eros ultrices porta. Donec ultrices consectetur blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="slideshow-container">
+          <div class="slide slideshow-fade">
+            <img class="slideshow-img" src="/assets/projects/GCR.png" />
+            <div class="slideshow-text">Caption One</div>
+          </div>
+
+          <div class="slide slideshow-fade">
+            <img class="slideshow-img" src="/assets/projects/GCR.png" />
+            <div class="slideshow-text">Caption Two</div>
+          </div>
+
+          <div class="slide slideshow-fade">
+            <img class="slideshow-img" src="/assets/projects/GCR.png" />
+            <div class="slideshow-text">Caption Three</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
     </div>
