@@ -16,13 +16,13 @@ body {
 }
 
 #slideshow-companion-wrapper {
-    border-radius: 8px;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 #slideshow-companion {
   height: 80vh;
   object-fit: contain;
-  padding: 16px;
   grid-column-start: 1;
   grid-column-end: 2;
 }
