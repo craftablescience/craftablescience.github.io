@@ -23,8 +23,10 @@ body {
 #slideshow-companion {
   height: 80vh;
   max-width: 100%;
+  vertical-align: middle;
   object-fit: contain;
-  border-radius: 8px 0px 0px 8px;
+  padding: 16px;
+  border-radius: 8px;
   grid-column-start: 1;
   grid-column-end: 2;
 }
