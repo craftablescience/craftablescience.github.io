@@ -15,6 +15,7 @@
 .slideshow-prev, .slideshow-next {
   cursor: pointer;
   position: absolute;
+  left: 8px;
   top: 50%;
   width: auto;
   padding: 10px 6px;
@@ -29,7 +30,8 @@
 }
 
 .slideshow-next {
-  right: 16px;
+  left: auto;
+  right: 8px;
 }
 
 .slideshow-prev:hover, .slideshow-next:hover {
