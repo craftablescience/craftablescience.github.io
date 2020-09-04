@@ -15,13 +15,15 @@ body {
   margin: 16px;
 }
 
+#slideshow-companion-wrapper {
+    border-radius: 8px;
+}
+
 #slideshow-companion {
   height: 80vh;
   max-width: 100%;
-  vertical-align: middle;
   object-fit: contain;
   padding: 16px;
-  border-radius: 8px;
   grid-column-start: 1;
   grid-column-end: 2;
 }
