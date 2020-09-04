@@ -1,7 +1,7 @@
 /* Made using https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .slide {
@@ -12,13 +12,7 @@
   animation-duration: 1.5s;
 }
 
-.slideshow-img {
-  vertical-align: middle;
-  width: 100%;
-}
-
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
 }
 
@@ -29,21 +23,21 @@
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 4px;
   user-select: none;
+  background-color: rgba(0,0,0,0.25);
 }
 
 .slideshow-next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 16px;
 }
 
 .slideshow-prev:hover, .slideshow-next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.75);
 }
 
 .slideshow-text {
