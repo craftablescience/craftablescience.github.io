@@ -40,6 +40,7 @@ function showSlide(n) {
             break;
         case 2:
             companion.src = pictures[1];
+            break;
         case 3:
             let flip = Math.random();
             if (flip > 0.5) {
@@ -47,5 +48,6 @@ function showSlide(n) {
             } else {
                 companion.src = pictures[3];
             }
+            break;
     }
 }
