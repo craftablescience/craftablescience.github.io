@@ -25,6 +25,7 @@ body {
   object-fit: contain;
   grid-column-start: 1;
   grid-column-end: 2;
+  border-radius: 8px;
 }
 
 .aboutitem {
