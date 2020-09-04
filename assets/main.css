@@ -11,11 +11,6 @@ body {
   padding: 16px;
 }
 
-#content ul {
-  list-style-type: none;
-  text-align: center;
-}
-
 #noscript-banner img {
   margin: 16px;
 }
