@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 body {
-  background-image: url("/assets/tiled_backdrop.png");
+  background-image: url("/assets/background/tiled_backdrop.png");
   margin: 0px;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -43,7 +43,7 @@ body {
   grid-column-end: 3;
   margin: 16px 16px 16px 16px;
   padding: 0px 16px;
-  background-image: url("/assets/tiled_backdrop.png");
+  background-image: url("/assets/background/tiled_backdrop.png");
   border-radius: 8px;
 }
 
