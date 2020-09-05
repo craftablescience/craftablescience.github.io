@@ -159,6 +159,45 @@ body {
   display: none;
 }
 
+.slide {
+  display: none;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slideshow-prev, .slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: auto;
+  padding: 10px 6px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 4px;
+  user-select: none;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.slideshow-next {
+  left: auto;
+  right: 8px;
+}
+
+.slideshow-prev:hover, .slideshow-next:hover {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+
+.slideshow-active, .slideshow-dot:hover {
+  background-color: #717171;
+}
+
 #navbar {
   width: 100%;
   background-image: url("/assets/tiled_navbar.png");
