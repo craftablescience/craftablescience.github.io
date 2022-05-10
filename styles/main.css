@@ -64,7 +64,7 @@ h1 {
 	margin: 24px 0 16px 0;
 }
 
-#contact-icons > * {
+#contact-icons a {
 	margin: 0 16px;
 	padding: 0;
 }
@@ -171,6 +171,11 @@ header.card {
 
 /* Fun mobile changes */
 @media only screen and (max-width: 800px) {
+	#contact-icons div:first-child {
+		margin-bottom: 4px;
+		padding: 0;
+	}
+
 	#nav-links {
 		position: relative;
 		justify-content: center;
@@ -212,10 +217,7 @@ header.card {
 
 /* todo: reconfigure all of this to be better + use kebab case */
 
-project-card,
-project-disclaimer-card,
-mod-project-card,
-mod-project-disclaimer-card {
+project-card {
     background-image: linear-gradient(to right, rgba(40, 25, 104, 0.6), rgba(47, 2, 66, 0.6));
     display: grid;
     text-align: left;
@@ -318,11 +320,11 @@ mod-project-disclaimer-card {
 }
 
 @media only screen and (max-width: 800px) {
-    .projectitem {
+    project-card {
         display: block;
         width: 96%;
     }
-    
+
     .projectitemaside {
         display: block;
         width: 100%;
@@ -339,14 +341,14 @@ mod-project-disclaimer-card {
     .projectitemaside:hover .projectitemslide {
         transform: translate(0, 0);
     }
-    
+
     .projectitemimage {
         display: block;
         border-radius: 8px 8px 0px 0px;
         width: 100%;
         height: auto;
     }
-    
+
     .projectitemdescription {
         margin: 0px 16px 16px 16px;
     }

@@ -23,7 +23,7 @@ const secret = new Konami(() => {
 				["Laura Lewis",	"Brendan Lewis"],
 				["Laura",		"Brendan"]
 			]), "");
-		}, 500);
+		}, 520);
 	} else {
 		// flip profile photo to secret photo
 		document.getElementById("profile-picture").style.transform = "rotateY(90deg)";
@@ -39,7 +39,7 @@ const secret = new Konami(() => {
 				["Brendan Lewis",	"Laura Lewis"],
 				["Brendan",			"Laura"]
 			]), "");
-		}, 500);
+		}, 520);
 	}
 	secretEnabled = !secretEnabled;
 });
