@@ -1,2 +1,0 @@
-(self.webpackChunkcraftablescience_github_io=self.webpackChunkcraftablescience_github_io||[]).push([[883],{616:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return i}});var a=n(294),c=n(85);function i(){return a.createElement(c.Z,{activePage:"404",useBottomFooter:"1"},a.createElement("div",{style:{paddingLeft:"5%",marginTop:"-16px"}},a.createElement("p",{style:{paddingTop:"48px"}},"404: Page not found :/")),a.createElement("div",{style:{height:"80vh"}}))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-92dec011f958dd0fbf6b.js.map
