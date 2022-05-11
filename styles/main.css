@@ -52,7 +52,7 @@ h1 {
 }
 
 #contact-names {
-	margin: 0 32px;
+	margin: 0 16px;
 }
 
 #contact-names > * {
@@ -61,7 +61,7 @@ h1 {
 }
 
 #contact-icons {
-	margin: 24px 0 16px 0;
+	margin: 20px 0 16px 0;
 }
 
 #contact-icons a {
@@ -79,6 +79,11 @@ h1 {
 /* Navbar */
 /**********/
 
+/* Remove padding so navbar is flush with bottom of card */
+header.card {
+	padding-bottom: 0;
+}
+
 #nav-links {
 	margin: 0;
 	padding: 0;
@@ -90,7 +95,7 @@ h1 {
 	text-decoration: none;
 
 	border-bottom: #FFF 4px solid;
-    transition: border-bottom-color 0.075s ease-in-out;
+	transition: border-bottom-color 0.075s ease-in-out;
 }
 
 #nav-links > a:hover {
@@ -116,20 +121,40 @@ h1 {
 	flex-flow: column nowrap;
 }
 
-.card:first-child {
-	margin-top: 32px;
-}
-
 .card:last-child {
 	margin-bottom: 24px;
 }
 
-header.card {
-	padding-bottom: 0;
-}
-
 .card-title {
 	margin-bottom: 8px;
+}
+
+.card-subtitle {
+	color: #EEE;
+	margin-bottom: 16px;
+}
+
+
+/*****************/
+/* Project cards */
+/*****************/
+
+project-card {
+	display: grid !important;
+	grid-template: auto / 408px auto;
+}
+
+project-card > :nth-child(1) {
+	border-radius: var(--border-radius-size);
+	width: 408px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+project-card > :nth-child(2) {
+	margin-left: 16px;
+	grid-column: 2;
+	grid-row: 1;
 }
 
 
@@ -137,9 +162,21 @@ header.card {
 /* Helper styles */
 /*****************/
 
+.fixed-background {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
 .flex-horizontal {
 	display: flex;
 	flex-flow: row wrap;
+}
+
+.flex-vertical {
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .flex-center {
@@ -156,11 +193,24 @@ header.card {
 	text-align: center;
 }
 
+.align-justify {
+	text-align: justify;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.full-height {
+	height: 100%;
+}
+
 .round {
 	border-radius: 50%;
 }
 
-.indent {
+.indent-paragraphs > p,
+p.indent-paragraphs {
 	text-indent: 2em;
 }
 
@@ -199,258 +249,24 @@ header.card {
 		width: 80%;
 	}
 
+	project-card {
+		grid-template: auto auto / auto;
+	}
+
+	project-card > :nth-child(1) {
+		width: 100%;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	project-card > :nth-child(2) {
+		margin-left: 0;
+		margin-top: 16px;
+		grid-column: 1;
+		grid-row: 2;
+	}
+
 	.mobile-break {
 		display: inherit;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* todo: reconfigure all of this to be better + use kebab case */
-
-project-card {
-    background-image: linear-gradient(to right, rgba(40, 25, 104, 0.6), rgba(47, 2, 66, 0.6));
-    display: grid;
-    text-align: left;
-    width: 90%;
-    margin: 32px auto;
-    border-radius: 8px;
-}
-
-.projectitemaside {
-    display: inline-grid;
-    float: left;
-    margin: 0px 8px 0px 0px;
-    padding: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    cursor: help;
-}
-
-.projectitemslide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 94%;
-    height: 60px;
-    border-radius: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
-    z-index: 2;
-    background: rgba(70, 130, 180, 0.7);
-    color: white;
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
-    transition: transform ease 0.3s;
-}
-
-.projectitemslide p a {
-    color: white;
-    text-decoration: underline;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.projectitemslide {
-    transform: translate(0, -100%);
-}
-
-.projectitemaside:hover .projectitemslide {
-    transform: translate(0, 8px);
-}
-  
-.projectitemimage {
-    margin: 0px 8px 0px 0px;
-    padding: 0px;
-    border-radius: 8px 0px 0px 8px;
-    width: 408px;
-    height: 100%;
-    min-height: 306px;
-}
-  
-.projectitemtitle {
-    color: white;
-    margin: 8px 0px 8px 0px;
-    padding: 0px;
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.projectitemsubtitle {
-    color: #DDDDDD;
-    margin: 0px 0px 8px 0px;
-    padding: 0px;
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.projectitemdescription {
-    color: white;
-    font-size: 1em;
-    margin: 0px 16px 16px 0px;
-    padding: 0px 0px 16px 0px;
-    text-align: justify;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-@media only screen and (max-width: 800px) {
-    project-card {
-        display: block;
-        width: 96%;
-    }
-
-    .projectitemaside {
-        display: block;
-        width: 100%;
-    }
-
-    .projectitemaside .projectitemslide {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 100%;
-        transform: translate(0, 0);
-        border-radius: 8px 8px 0px 0px;
-    }
-
-    .projectitemaside:hover .projectitemslide {
-        transform: translate(0, 0);
-    }
-
-    .projectitemimage {
-        display: block;
-        border-radius: 8px 8px 0px 0px;
-        width: 100%;
-        height: auto;
-    }
-
-    .projectitemdescription {
-        margin: 0px 16px 16px 16px;
-    }
-}
-
-/*
-.gameitemcontainer {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.gameitem {
-    min-width: 32%;
-    min-height: 85vh;
-    text-align: center;
-    background-color: rgba(56, 16, 99, 0.6);
-    color: white;
-    margin-right: 2%;
-    margin-top: 16px;
-    border-radius: 8px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    cursor: help;
-}
-
-.gameitem:last-child {
-    margin-right: 0px;
-}
-
-.gameitem img {
-    width: 100%;
-    border-radius: 8px 8px 0px 0px;
-}
-
-.gameitem h4 {
-    color: #DDDDDD;
-}
-
-.gameitem p {
-    padding-left: 12px;
-    padding-right: 20px;
-}
-
-.gameitemslide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 64px;
-    z-index: 1;
-    background: rgba(70, 130, 180, 0.7);
-    padding: 20px;
-    color: white;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: transform ease 0.3s;
-}
-
-.gameitemslide p a {
-    color: white;
-    text-decoration: underline;
-}
-
-.gameitem .gameitemslide {
-    transform: translate(0, -100%);
-}
-
-.gameitem:hover .gameitemslide {
-    transform: translate(0, 0);
-}
-
-@media only screen and (max-width: 800px) {
-    .gameitemcontainer {
-        flex-direction: column;
-    }
-
-    .gameitem {
-        max-width: 360px;
-        margin-right: 0px;
-        margin-bottom: 16px;
-        height: 80vh;
-    }
-
-    .gameitem:last-child {
-        margin-bottom: 0px;
-    }
-
-    .gameitem .gameitemslide {
-        transform: translate(0, 0);
-    }
-}
-*/

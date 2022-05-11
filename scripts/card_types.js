@@ -2,27 +2,29 @@
 customElements.define("project-card", class extends HTMLElement {
 	render() {
 		let disclaimer = "";
-		if (this.hasAttribute("disclaimer")) {
+		if (this.hasAttribute("has-disclaimer")) {
 			disclaimer = "<strong>I am a member of a team that works on this project.</strong> ";
 		}
 
-		let modUrl = "";
+		let projectUrl = "";
 		if (this.hasAttribute("mod-link")) {
-			modUrl = `<p><a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">The mod is published on CurseForge here.</a></p>`;
+			projectUrl = `<p><a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download from CurseForge</a></p>`;
+		} else if (this.hasAttribute("play-link")) {
+			projectUrl = `<p><a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a></p>`;
 		}
 
 		this.innerHTML = `
-			<aside class="projectitemaside">
-				<div class="projectitemslide">
-					<p><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">The project files can be found here.</a></p>
-					${modUrl}
-				</div>
-				<img class="projectitemimage" src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" />
-			</aside>
-			<h1 class="projectitemtitle">${this.getAttribute("title")}</h1>
-			<h4 class="projectitemsubtitle">${this.getAttribute("subtitle")}</h4>
-			<p class="projectitemdescription">${disclaimer}${this.getAttribute("description")}</p>
+			<img src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" />
+			<div>
+				<h2 class="card-title align-center">${this.getAttribute("title")}</h2>
+				<h4 class="card-subtitle align-center">${this.getAttribute("subtitle")}</h4>
+				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
+				<p><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
+				${projectUrl}
+			</div>
 		`;
+
+		this.classList.add("card");
 	}
 
 	connectedCallback() {
@@ -30,7 +32,7 @@ customElements.define("project-card", class extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return ["img-src", "img-alt", "title", "subtitle", "description", "src-link", "mod-link", "disclaimer"];
+		return ["title", "subtitle", "description", "has-disclaimer", "img-src", "img-alt", "src-link", "mod-link", "play-link"];
 	}
 
 	attributeChangedCallback(_name, _oldValue, _newValue) {

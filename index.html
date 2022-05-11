@@ -58,11 +58,12 @@
 			<nav id="nav-links" class="flex-horizontal flex-center">
 				<a href="#about">About</a>
 				<a href="#projects">Projects</a>
+				<a href="#games">Games</a>
 			</nav>
 		</header>
 
-		<div id="about" class="card indent">
-			<h1 class="card-title align-center">About</h2>
+		<div id="about" class="card indent-paragraphs">
+			<h1 class="card-title align-center">About</h1>
 			<p>
 				Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -81,90 +82,120 @@
 			</p>
 		</div>
 
-		<div id="projects" class="card">
-			<h1 class="card-title align-center">Projects</h2>
+		<div id="projects" class="full-width">
+			<div class="card">
+				<h1 class="card-title align-center">Projects</h1>
+			</div>
 			<project-card
-				img-src="images/projects/galacticraft.png"
-				img-alt="Galacticraft screenshot."
 				title='"Galacticraft" Minecraft Mod'
 				subtitle="February 2019 to now"
 				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
-				src-link="https://github.com/TeamGalacticraft/Galacticraft"
-				disclaimer></project-card>
+				has-disclaimer
+				img-src="images/projects/galacticraft.png"
+				img-alt="Galacticraft screenshot."
+				src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
 			<project-card
-				img-src="images/projects/windowed_chat.png"
-				img-alt="A picture of the modification running."
 				title='"Windowed Chat" Minecraft Mod'
 				subtitle="November 2020"
 				description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
+				img-src="images/projects/windowed_chat.png"
+				img-alt="A picture of the modification running."
 				src-link="https://github.com/craftablescience/WindowedChat"
 				mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
 			<project-card
-				img-src="images/projects/2019_research.jpg"
-				img-alt="My project display board."
 				title="Antivirus Database Scanner"
 				subtitle="Summer 2019"
 				description="The aim of this project was to see the distribution of protection types between antiviruses, and measure how many threats, risks, and vulnerabilities each one had stored in their public database. The antiviruses studied were Symantec, Kaspersky, and TrendMicro. The collection of data was undertaken by a custom Python program, and the data was analyzed and charted by another Python program. This research was done for an internship at Delaware State University, under Dr. Kul, in the summer of 2019."
+				img-src="images/projects/2019_research.jpg"
+				img-alt="My project display board."
 				src-link="https://github.com/craftablescience/Antivirus-Database-Scanner"></project-card>
 			<project-card
-				img-src="images/projects/2018_research.jpg"
-				img-alt="My project display board."
 				title="Analyzing Spectra of LEDs"
 				subtitle="Summer 2018"
 				description="In this project, I measured the spectra of a large amount of LEDs, for science! The LED colors were white, red, blue, yellow, and green. The data gathered was over 2 dimensions, but using Principal Component Analysis I could reduce it to a 2D scatter plot, to visualize the findings. The data shows that each LED has a slightly different spectra due to small manufacturing differences, meaning in the future they could be used as a secure physical key. This research was done for an internship at Delaware State University, under Dr. Markushin, in the summer of 2018."
+				img-src="images/projects/2018_research.jpg"
+				img-alt="My project display board."
 				src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
 			<project-card
-				img-src="images/projects/jython_mc.gif"
-				img-alt="Running Python inside Minecraft."
 				title='"Minecraft Python Command API" Minecraft Mod'
 				subtitle="August 2020"
 				description="This mod aims to add a way for Python programs to run commands inside a video game called Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
+				img-src="images/projects/jython_mc.gif"
+				img-alt="Running Python inside Minecraft."
 				src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
 				mod-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
 			<project-card
-				img-src="images/projects/IEP.jpg"
-				img-alt="Interstellar: Exoplanets picture."
 				title='"Interstellar: Exoplanets" Minecraft Mod'
 				subtitle="June 2020"
 				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
+				has-disclaimer
+				img-src="images/projects/IEP.jpg"
+				img-alt="Interstellar: Exoplanets picture."
 				src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
-				mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"
-				disclaimer></project-card>
+				mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
 			<project-card
-				img-src="images/projects/2020_sciencefair.png"
-				img-alt="2020 Science Fair dual camera photograph."
 				title="Science Fair 2020 (VR Dual-Eye Camera Feed)"
 				subtitle="January 2020"
 				description="My submission for the science fair in 2020 was a security device that could add a sense of depth to footage, viewable in the Oculus Quest VR headset. I used two Raspberrry Pi's with camera modules attached, to livestream their camera feeds over the Internet. Then, I created a Unity application to capture the data and relay it to each lens of the headset. Ultimately, however, it was a failure, as the two camera streams did not merge together in the headset as I had hoped. Instead it just gives the user the power to see cross-eyed."
+				img-src="images/projects/2020_sciencefair.png"
+				img-alt="2020 Science Fair dual camera photograph."
 				src-link="https://github.com/craftablescience/SecurityCameraWithDepth"></project-card>
 			<project-card
-				img-src="images/projects/2019_sciencefair.jpg"
-				img-alt="2019 Science Fair cat feeder image."
 				title="Science Fair 2019 (Automated Cat Feeder)"
 				subtitle="January 2019"
 				description="My submission for the science fair in 2019 was an automated cat feeder. It was powered by a LEGO motor attached to a Raspberry Pi, which turned a knob on a cheap manual cat feeder. It could be triggered automatically at a set time, or manually from an android app."
+				img-src="images/projects/2019_sciencefair.jpg"
+				img-alt="2019 Science Fair cat feeder image."
 				src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 			<project-card
-				img-src="images/projects/2018_sciencefair.jpg"
-				img-alt="2018 Science Fair list of image files used in experiment."
 				title="Science Fair 2018 (Emotion Recognition)"
 				subtitle="January 2018"
 				description="My submission for the science fair in 2018 was a program that determined the accuracy of two emotion recognition services, F.A.C.E. and SkyBiometry."
+				img-src="images/projects/2018_sciencefair.jpg"
+				img-alt="2018 Science Fair list of image files used in experiment."
 				src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 			<project-card
-				img-src="images/projects/2017_sciencefair.png"
-				img-alt="2017 Science Fair picture of program."
 				title="Science Fair 2017 (Reaction Times)"
 				subtitle="January 2017"
 				description="My submission for the science fair in 2017 was a program that measured reaction times with a Raspberry Pi. It then calculated the distance a car would have travelled during that time."
+				img-src="images/projects/2017_sciencefair.png"
+				img-alt="2017 Science Fair picture of program."
 				src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 			<project-card
-				img-src="images/projects/steve.jpg"
-				img-alt="Screenshot of code from 2016."
 				title="Old Programs"
 				subtitle="2017 and Earlier"
 				description="I lost many of my old programs to both a faulty hard drive in a laptop, and neglecting to back up my data. Fortunately, some programs were on an old flash drive from 2014, and I have uploaded them to the cloud. So far I have a prototype voice assistant Steve (who actually worked!), a weather monitor for a Raspberry Pi and SenseHAT to upload sensor data to a Dropbox folder, and two simplistic formula solver programs for the TI-84 graphing calculator."
+				img-src="images/projects/steve.jpg"
+				img-alt="Screenshot of code from 2016."
 				src-link="https://github.com/craftablescience/miscellaneous-old-projects"></project-card>
+		</div>
+
+		<div id="games" class="full-width">
+			<div class="card">
+				<h1 class="card-title align-center">Games</h1>
+			</div>
+			<project-card
+				title="Godot Puzzlemaker"
+				subtitle="2021"
+				description="This project aims to create a quick and easy level editor for the Godot Game Engine, to make rapidly prototyping level layouts possible. No longer will modelers have to spend hours in Blender or similar 3D software! It has a save/load system, supports custom textures and entities, and exports levels to the format used in Portal 2, with many more features planned."
+				img-src="images/games/godotpuzzlemaker.png"
+				img-alt="Godot Puzzlemaker Screenshot"
+				src-link="https://github.com/craftablescience/GodotPuzzlemaker"
+				play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
+			<project-card
+				title="OpenTK Game Engine"
+				subtitle="2021"
+				description="This was my first foray into C#. I decided to build a simple game engine using OpenGL for the graphics, Bullet for physics, and FMOD for sound. It currently can create unlit meshes, physics objects, and has several demos in a separate C# project to showcase its functionality. It also includes an OBJ mesh loader I wrote myself. All the engine features are as abstracted as possible."
+				img-src="images/games/opentkgameengine.gif"
+				img-alt="The physics demo included with the game engine"
+				src-link="https://github.com/craftablescience/OpenTKGameEngine"></project-card>
+			<project-card
+				title="Steins;Gate VR Laboratory"
+				subtitle="2020"
+				description="This is an application for the Oculus Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show. I still work on it infrequently."
+				img-src="images/games/steins;gate-vr.png"
+				img-alt="Steins semicolon Gate laboratory model in VR"
+				src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 		</div>
 
 		<audio id="rickroll" style="display: none;" src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg" type="audio/ogg" loop></audio>
