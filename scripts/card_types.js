@@ -16,7 +16,7 @@ customElements.define("project-card", class extends HTMLElement {
 		this.innerHTML = `
 			<img src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" />
 			<div>
-				<h2 class="card-title align-center">${this.getAttribute("title")}</h2>
+				<h2 class="align-center">${this.getAttribute("title")}</h2>
 				<h4 class="card-subtitle align-center">${this.getAttribute("subtitle")}</h4>
 				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
 				<p><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
