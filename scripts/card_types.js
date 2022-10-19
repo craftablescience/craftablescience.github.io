@@ -19,12 +19,15 @@ customElements.define("project-card", class extends HTMLElement {
 				<h2 class="align-center">${this.getAttribute("title")}</h2>
 				<h4 class="card-subtitle align-center">${this.getAttribute("subtitle")}</h4>
 				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
+				<br />
 				<p><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
 				${projectUrl}
 			</div>
 		`;
 
-		this.classList.add("card");
+		if (!this.classList.contains("card")) {
+			this.classList.add("card");
+		}
 	}
 
 	connectedCallback() {
