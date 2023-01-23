@@ -80,9 +80,15 @@ h1 {
 /* Navbar */
 /**********/
 
-/* Remove padding so navbar is flush with bottom of card */
 header.card {
+	width: 100%;
+	border-radius: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
 	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #nav-links {
