@@ -9,12 +9,12 @@
 		<meta name="author" content="Brendan Lewis" />
 		<meta name="description" content="My portfolio, showcasing all my projects, and including contact information." />
 
-		<meta name="og:title" content="Brendan Lewis | Portfolio" />
+		<meta name="og:title" content="Brendan Lewis Portfolio" />
 		<meta name="og:description" content="My portfolio, showcasing all my projects, and including contact information." />
 		<meta name="og:image" content="https://craftablescience.info/images/about/xenia.png" />
 		<meta name="og:image:secure_url" content="https://craftablescience.info/images/about/xenia.png" />
 		<meta name="og:image:type" content="image/png" />
-		<meta name="og:image:alt" content="An MS Paint drawing of Xenia, an old potential mascot for the Linux operating system." />
+		<meta name="og:image:alt" content="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system." />
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="styles/main.css" />
@@ -40,7 +40,7 @@
 		<header class="card">
 			<div class="flex-horizontal flex-center">
 				<a href="https://twitter.com/lynasdf/status/1485015096321581061" target="_blank" rel="noopener noreferrer">
-					<img id="profile-picture" class="round" src="images/about/xenia.png" alt="An MS Paint drawing of Xenia, an old potential mascot for the Linux operating system and my profile picture on most sites." />
+					<img id="profile-picture" class="round" src="images/about/xenia.png" alt="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system and my profile picture on most sites." />
 				</a>
 				<div id="contact-names" class="has-vars">
 					<h1>$FULLNAME</h1>
@@ -59,9 +59,9 @@
 				</div>
 			</div>
 			<nav id="nav-links" class="flex-horizontal flex-center">
-				<a href="#about">About</a>
+				<!--<a href="#about">About</a>-->
 				<a href="#projects">Projects</a>
-				<a href="#games">Games</a>
+				<a href="#modding">Modding</a>
 			</nav>
 		</header>
 
@@ -82,21 +82,34 @@
 				<h1 class="align-center">Projects</h1>
 			</div>
 			<project-card
-				title='"Galacticraft" Minecraft Mod'
-				subtitle="February 2019 to now"
-				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
-				has-disclaimer
-				img-src="images/projects/galacticraft.png"
-				img-alt="Galacticraft screenshot."
-				src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
+				title="Chira Engine"
+				subtitle="June 2021 to now"
+				description="Chira Engine is a game engine I have been working on for almost two years. It was created to learn C++ and how game engines worked, and it taught me (and continues to teach me) a great deal about both of those subjects, as well as the CMake build system."
+				img-src="images/projects/chira_engine.png"
+				img-alt="A screenshot of the editor present in Chira Engine. The editor UI was created by frequent contributor / collaborator Ashi."
+				src-link="https://github.com/craftablescience/ChiraEngine"></project-card>
 			<project-card
-				title='"Windowed Chat" Minecraft Mod'
-				subtitle="November 2020"
-				description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
-				img-src="images/projects/windowed_chat.png"
-				img-alt="A picture of the modification running."
-				src-link="https://github.com/craftablescience/WindowedChat"
-				mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
+				title="OpenTK Game Engine"
+				subtitle="2021"
+				description="This was my first foray into C#. I decided to build a simple game engine using OpenGL for the graphics, Bullet for physics, and FMOD for sound. It currently can create unlit meshes, physics objects, and has several demos in a separate C# project to showcase its functionality. All the engine features are as abstracted as possible."
+				img-src="images/games/opentkgameengine.gif"
+				img-alt="The physics demo included with the game engine"
+				src-link="https://github.com/craftablescience/OpenTKGameEngine"></project-card>
+			<project-card
+				title="Godot Puzzlemaker"
+				subtitle="2021"
+				description="This project aimed to create a quick and easy level editor for the Godot Game Engine, to make rapidly prototyping level layouts possible. No longer will modelers have to spend hours in Blender or similar 3D software! It has a save/load system, supports custom textures and entities, and exports levels to the format used in Portal 2."
+				img-src="images/games/godotpuzzlemaker.png"
+				img-alt="Godot Puzzlemaker Screenshot"
+				src-link="https://github.com/craftablescience/GodotPuzzlemaker"
+				play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
+			<project-card
+				title="Steins;Gate VR Laboratory"
+				subtitle="2020"
+				description="This is an application for the Oculus Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
+				img-src="images/games/steins;gate-vr.png"
+				img-alt="Steins semicolon Gate laboratory model in VR"
+				src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 			<project-card
 				title="Antivirus Database Scanner"
 				subtitle="Summer 2019"
@@ -111,23 +124,6 @@
 				img-src="images/projects/2018_research.jpg"
 				img-alt="My project display board."
 				src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
-			<project-card
-				title='"Minecraft Python Command API" Minecraft Mod'
-				subtitle="August 2020"
-				description="This mod aims to add a way for Python programs to run commands inside a video game called Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
-				img-src="images/projects/jython_mc.gif"
-				img-alt="Running Python inside Minecraft."
-				src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
-				mod-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
-			<project-card
-				title='"Interstellar: Exoplanets" Minecraft Mod'
-				subtitle="June 2020"
-				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
-				has-disclaimer
-				img-src="images/projects/IEP.jpg"
-				img-alt="Interstellar: Exoplanets picture."
-				src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
-				mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
 			<project-card
 				title="Science Fair 2020 (VR Dual-Eye Camera Feed)"
 				subtitle="January 2020"
@@ -165,32 +161,43 @@
 				src-link="https://github.com/craftablescience/miscellaneous-old-projects"></project-card>
 		</div>
 
-		<div id="games" class="full-width">
+		<div id="modding" class="full-width">
 			<div class="card card-heading">
-				<h1 class="align-center">Games</h1>
+				<h1 class="align-center">Modding</h1>
 			</div>
 			<project-card
-				title="Godot Puzzlemaker"
-				subtitle="2021"
-				description="This project aims to create a quick and easy level editor for the Godot Game Engine, to make rapidly prototyping level layouts possible. No longer will modelers have to spend hours in Blender or similar 3D software! It has a save/load system, supports custom textures and entities, and exports levels to the format used in Portal 2, with many more features planned."
-				img-src="images/games/godotpuzzlemaker.png"
-				img-alt="Godot Puzzlemaker Screenshot"
-				src-link="https://github.com/craftablescience/GodotPuzzlemaker"
-				play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
+				title='"Galacticraft" Minecraft Mod'
+				subtitle="February 2019 to now"
+				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
+				has-disclaimer
+				img-src="images/projects/galacticraft.png"
+				img-alt="Galacticraft screenshot."
+				src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
 			<project-card
-				title="OpenTK Game Engine"
-				subtitle="2021"
-				description="This was my first foray into C#. I decided to build a simple game engine using OpenGL for the graphics, Bullet for physics, and FMOD for sound. It currently can create unlit meshes, physics objects, and has several demos in a separate C# project to showcase its functionality. It also includes an OBJ mesh loader I wrote myself. All the engine features are as abstracted as possible."
-				img-src="images/games/opentkgameengine.gif"
-				img-alt="The physics demo included with the game engine"
-				src-link="https://github.com/craftablescience/OpenTKGameEngine"></project-card>
+				title='"Windowed Chat" Minecraft Mod'
+				subtitle="November 2020"
+				description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
+				img-src="images/projects/windowed_chat.png"
+				img-alt="A picture of the modification running."
+				src-link="https://github.com/craftablescience/WindowedChat"
+				mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
 			<project-card
-				title="Steins;Gate VR Laboratory"
-				subtitle="2020"
-				description="This is an application for the Oculus Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show. I still work on it infrequently."
-				img-src="images/games/steins;gate-vr.png"
-				img-alt="Steins semicolon Gate laboratory model in VR"
-				src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
+				title='"Minecraft Python Command API" Minecraft Mod'
+				subtitle="August 2020"
+				description="This mod aims to add a way for Python programs to run commands inside a video game called Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
+				img-src="images/projects/jython_mc.gif"
+				img-alt="Running Python inside Minecraft."
+				src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
+				mod-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
+			<project-card
+				title='"Interstellar: Exoplanets" Minecraft Mod'
+				subtitle="June 2020"
+				description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
+				has-disclaimer
+				img-src="images/projects/IEP.jpg"
+				img-alt="Interstellar: Exoplanets picture."
+				src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
+				mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
 		</div>
 
 		<audio id="rickroll" style="display: none;" src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg" type="audio/ogg" loop></audio>

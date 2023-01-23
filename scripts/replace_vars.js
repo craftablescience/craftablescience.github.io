@@ -1,4 +1,4 @@
-const replace_vars = (vars, prefix = "$") => {
+function replace_vars(vars, prefix = "$") {
 	const elements = document.getElementsByClassName("has-vars");
 	for (const [k, v] of vars) {
 		for (let i = 0; i < elements.length; i++) {

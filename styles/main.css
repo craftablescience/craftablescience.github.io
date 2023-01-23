@@ -11,7 +11,8 @@
 
 	--color-gradient-left: rgb(0, 85, 120);
 	--color-gradient-right: rgb(20, 95, 80);
-	--color-card-background: #FFF3;
+	--card-background: #FFF3;
+	--card-header-background: linear-gradient(to right, rgba(40, 25, 104, 0.6), rgba(47, 2, 66, 0.6));
 	--color-text: white;
 	--border-radius-size: 6px;
 }
@@ -108,7 +109,7 @@ header.card {
 /**********/
 
 .card {
-	background-color: var(--color-card-background);
+	background-color: var(--card-background);
 	-webkit-backdrop-filter: blur(16px);
 	backdrop-filter: blur(16px);
 
@@ -126,7 +127,7 @@ header.card {
 }
 
 .card-heading {
-	background-image: linear-gradient(to right, rgba(40, 25, 104, 0.6), rgba(47, 2, 66, 0.6));
+	background-image: var(--card-header-background);
 }
 
 .card-subtitle {
@@ -236,7 +237,7 @@ p.indent-paragraphs {
 
 	#nav-links > a {
 		width: 80%;
-		background-color: var(--color-card-background);
+		background-color: var(--card-background);
 		-webkit-backdrop-filter: blur(16px);
 		backdrop-filter: blur(16px);
 		border-bottom-width: 0;
