@@ -35,8 +35,6 @@ body {
 	color: var(--color-text);
 	font-family: "Ubuntu Mono", monospace;
 
-	/*cursor: url('cursors/Dark_Matter_Normal.cur');*/
-
 	margin: var(--margin-size) 0 0 0;
 	padding: 0;
 
