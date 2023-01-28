@@ -14,7 +14,7 @@
 		<meta name="og:image" content="https://craftablescience.info/images/about/xenia.png" />
 		<meta name="og:image:secure_url" content="https://craftablescience.info/images/about/xenia.png" />
 		<meta name="og:image:type" content="image/png" />
-		<meta name="og:image:alt" content="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system." />
+		<meta name="og:image:alt" content="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system" />
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="styles/main.css" />
@@ -31,7 +31,7 @@
 						<img id="profile-picture" src="images/about/xenia_trans.png" alt="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system and my profile picture on most sites." />
 					</a>
 					<div id="contact-names" class="has-vars">
-						<h1>$FULLNAME</h1>
+						<h1 title="this name kind of sucks, but it's my legal name">$FULLNAME</h1>
 						<h2 class="align-center">@$USERNAME</h2>
 					</div>
 					<div id="contact-links">
@@ -42,14 +42,17 @@
 						<a href="https://tech.lgbt/@craftablescience" target="_blank" rel="noopener noreferrer">mastodon</a>
 						<a href="https://cohost.org/craftablescience" target="_blank" rel="noopener noreferrer">cohost</a>
 						<a href="https://www.youtube.com/@craftablescience" target="_blank" rel="noopener noreferrer">youtube</a>
+						<a href="https://www.last.fm/user/craftablscience" target="_blank" rel="noopener noreferrer">last.fm</a>
 						<a href="https://steamcommunity.com/id/craftablescience" target="_blank" rel="noopener noreferrer">steam</a>
 					</div>
 				</aside>
 
 				<nav class="flex-horizontal flex-center card-bg align-center">
 					<!--<a href="#about">about</a>-->
-					<a href="#projects">projects</a>
+					<a href="#game-dev">game dev</a>
+					<a href="#libraries">libraries</a>
 					<a href="#minecraft-mods">minecraft mods</a>
+					<a href="#research">research</a>
 				</nav>
 			</div>
 		</header>
@@ -60,15 +63,56 @@
 				<div class="card-header no-margin">
 					<h2 class="align-center">about</h2>
 				</div>
+				<div class="card has-vars">
+					<p>Hello! I'm a nerdy <abbr class="enby" title="enby: nonbinary person">enby</abbr> girl who loves C++ a little too much for her own good. I go by they/she 😸</p>
+				</div>
 				<div class="card">
-					<p>hi</p>
+					<p>Some languages I know:</p>
+					<table>
+						<tr>
+							<td>2014</td>
+							<td>Python</td>
+							<td>The first real programming language I ever learned.</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>HTML5/CSS3</td>
+							<td>It may not be a programming language but it's important enough to note. I was wholly self-taught. Web development interested me, but it was never something I wanted to focus a career on.</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>Java</td>
+							<td>I maintain that this is objectively not a good language, but the JVM backing it is good software. This was the first language I learned that used braces and ignored indentation, so it was a rude awakening.</td>
+						</tr>
+						<tr>
+							<td>???</td>
+							<td>JavaScript</td>
+							<td>idk</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>C++</td>
+							<td>I delayed learning this language because I feared it would be difficult. It was, but it was also very liberating and enjoyable to use.</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>C</td>
+							<td>I prefer C++.</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>ARM Assembly</td>
+							<td>Can I say I'm proficient in writing assembly? No, but I do know what compiled languages compile into and how to read assembly.</td>
+						</tr>
+					</table>
+					<p>I'm learning Rust currently, but still not good enough at it to put it in The List.</p>
 				</div>
 			</section>
 			-->
 
-			<section id="projects" class="full-width">
+			<section id="game-dev" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">projects</h2>
+					<h2 class="align-center">game dev</h2>
 				</div>
 				<project-card
 					title="Chira Engine"
@@ -95,10 +139,96 @@
 				<project-card
 					title="Steins;Gate VR Laboratory"
 					subtitle="2020"
-					description="This is an application for the Oculus Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
+					description="This is an application for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
 					img-src="images/games/steins;gate-vr.png"
 					img-alt="Steins semicolon Gate laboratory model in VR"
 					src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
+			</section>
+
+			<section id="libraries" class="full-width">
+				<div class="card-header">
+					<h2 class="align-center">libraries</h2>
+				</div>
+				<project-card
+					title="armcomp"
+					subtitle="October 2022"
+					description="When I took a class on ARM assembly at university, I knew I did not want to constantly write boilerplate, especially when passing values to functions and storing the current registers every time. Then I realized I could do what the developers of C did and make my own language. It supports everything I needed to do for my class except working with arrays. By the end of the class I was in the middle of rewriting the parser, an effort I abandoned when I no longer had the need to use the language."
+					img-src="images/projects/armcomp.png"
+					img-alt="A comparison of armcomp code, versus the generated assembly"
+					src-link="https://github.com/craftablescience/armcomp"></project-card>
+				<project-card
+					title="cstringpp"
+					subtitle="September 2022"
+					description="This header-only library was an experiment to see if I could create fully constexpr strings in C++. It ended up being fairly trivial, and supports several constexpr reimplementations of C string functions."
+					img-src="images/projects/cstringpp.png"
+					img-alt="A screenshot of the cstringpp source code"
+					src-link="https://github.com/craftablescience/cstringpp"></project-card>
+				<project-card
+					title="VPKTool"
+					subtitle="July 2022"
+					description="This is a simple library to read VPK (Valve PacK) files, which are similar to zip files in that they store collections of files, but different from zip in both structure of the entries, and the fact that it stores files without compression. It allows users to list stored file entries in a VPK, and retrieve file contents."
+					img-src="images/projects/vpktool.png"
+					img-alt="A screenshot of vpktool listing file entries in Portal 2's VPK"
+					src-link="https://github.com/craftablescience/VPKTool"></project-card>
+				<project-card
+					title="LibLoader"
+					subtitle="December 2021"
+					description="This header-only library allows users to load and call functions from dynamic libraries (.DLL on Windows, .DYLIB on macOS, .SO on Linux). Any return value is stored in the second parameter of the call function. It was created to interface with the Steam API without using proprietary headers, and so MSVC-compiled libraries would work with MinGW-compiled applications."
+					img-src="images/projects/libloader.png"
+					img-alt=""
+					src-link="https://github.com/craftablescience/LibLoader"></project-card>
+				<project-card
+					title="vmflib-godot"
+					subtitle="March 2021"
+					description="This is a rewrite of a VMF (Valve Map Format) creation library, previously in Python, to the Godot Game Engine's scripting language GDScript. It is an addon that allows Godot applications and games to create maps for Source engine games."
+					img-src="images/projects/hammer_vdc.png"
+					img-alt="A screenshot of the Hammer map editor with a Half-Life 2 map open"
+					src-link="https://github.com/craftablescience/vmflib-godot"></project-card>
+			</section>
+
+			<section id="minecraft-mods" class="full-width">
+				<div class="card-header">
+					<h2 class="align-center">minecraft mods</h2>
+				</div>
+				<project-card
+					title='Galacticraft'
+					subtitle="February 2019 to now"
+					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
+					has-disclaimer
+					img-src="images/projects/galacticraft.png"
+					img-alt="Galacticraft screenshot."
+					src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
+				<project-card
+					title='Windowed Chat'
+					subtitle="November 2020"
+					description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
+					img-src="images/projects/windowed_chat.png"
+					img-alt="A picture of the modification running."
+					src-link="https://github.com/craftablescience/WindowedChat"
+					mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
+				<project-card
+					title='Minecraft Python Command API'
+					subtitle="August 2020"
+					description="This mod aims to add a way for Python programs to run commands inside a video game called Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
+					img-src="images/projects/jython_mc.gif"
+					img-alt="Running Python inside Minecraft."
+					src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
+					mod-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
+				<project-card
+					title='Interstellar: Exoplanets'
+					subtitle="June 2020"
+					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
+					has-disclaimer
+					img-src="images/projects/IEP.jpg"
+					img-alt="Interstellar: Exoplanets picture."
+					src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
+					mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
+			</section>
+
+			<section id="research" class="full-width">
+				<div class="card-header">
+					<h2 class="align-center">research</h2>
+				</div>
 				<project-card
 					title="Antivirus Database Scanner"
 					subtitle="Summer 2019"
@@ -141,52 +271,6 @@
 					img-src="images/projects/2017_sciencefair.png"
 					img-alt="2017 Science Fair picture of program."
 					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
-				<project-card
-					title="Old Programs"
-					subtitle="2017 and Earlier"
-					description="I lost many of my old programs to both a faulty hard drive in a laptop, and neglecting to back up my data. Fortunately, some programs were on an old flash drive from 2014, and I have uploaded them to the cloud. So far I have a prototype voice assistant Steve (who actually worked!), a weather monitor for a Raspberry Pi and SenseHAT to upload sensor data to a Dropbox folder, and two simplistic formula solver programs for the TI-84 graphing calculator."
-					img-src="images/projects/steve.jpg"
-					img-alt="Screenshot of code from 2016."
-					src-link="https://github.com/craftablescience/miscellaneous-old-projects"></project-card>
-			</section>
-
-			<section id="minecraft-mods" class="full-width">
-				<div class="card-header">
-					<h2 class="align-center">minecraft mods</h2>
-				</div>
-				<project-card
-					title='Galacticraft'
-					subtitle="February 2019 to now"
-					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
-					has-disclaimer
-					img-src="images/projects/galacticraft.png"
-					img-alt="Galacticraft screenshot."
-					src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
-				<project-card
-					title='Windowed Chat'
-					subtitle="November 2020"
-					description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
-					img-src="images/projects/windowed_chat.png"
-					img-alt="A picture of the modification running."
-					src-link="https://github.com/craftablescience/WindowedChat"
-					mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
-				<project-card
-					title='Minecraft Python Command API'
-					subtitle="August 2020"
-					description="This mod aims to add a way for Python programs to run commands inside a video game called Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
-					img-src="images/projects/jython_mc.gif"
-					img-alt="Running Python inside Minecraft."
-					src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
-					mod-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
-				<project-card
-					title='Interstellar: Exoplanets'
-					subtitle="June 2020"
-					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
-					has-disclaimer
-					img-src="images/projects/IEP.jpg"
-					img-alt="Interstellar: Exoplanets picture."
-					src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
-					mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
 			</section>
 
 			<footer class="card-header">

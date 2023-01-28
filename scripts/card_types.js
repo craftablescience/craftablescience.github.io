@@ -3,7 +3,7 @@ customElements.define("project-card", class extends HTMLElement {
 	render() {
 		let disclaimer = "";
 		if (this.hasAttribute("has-disclaimer")) {
-			disclaimer = "<strong>I am a member of a team that works on this project.</strong> ";
+			disclaimer = "<em>I am a member of a team that works on this project.</em> ";
 		}
 
 		let projectUrl = "";
