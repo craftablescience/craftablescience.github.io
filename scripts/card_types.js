@@ -14,10 +14,10 @@ customElements.define("project-card", class extends HTMLElement {
 		}
 
 		this.innerHTML = `
-			<img src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" />
+			<img src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" title="${this.getAttribute("img-alt")}" />
 			<div>
-				<h2 class="align-center">${this.getAttribute("title")}</h2>
-				<h4 class="card-subtitle align-center">${this.getAttribute("subtitle")}</h4>
+				<h2 class="align-center">${this.getAttribute("heading")}</h2>
+				<h4 class="card-subheading align-center">${this.getAttribute("subheading")}</h4>
 				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
 				<br />
 				<p class="align-center"><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
@@ -35,7 +35,7 @@ customElements.define("project-card", class extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return ["title", "subtitle", "description", "has-disclaimer", "img-src", "img-alt", "src-link", "mod-link", "play-link"];
+		return ["heading", "subheading", "description", "has-disclaimer", "img-src", "img-alt", "src-link", "mod-link", "play-link"];
 	}
 
 	attributeChangedCallback(_name, _oldValue, _newValue) {

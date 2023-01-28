@@ -200,7 +200,7 @@ main {
 	background-color: var(--card-background-2);
 }
 
-.card-subtitle {
+.card-subheading {
 	color: #EEE;
 	margin-bottom: 16px;
 }
