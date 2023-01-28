@@ -1,4 +1,4 @@
-function replace_vars(vars, prefix = "$") {
+function replace_vars(prefix, vars) {
 	const elements = document.getElementsByClassName("has-vars");
 	for (const [k, v] of vars) {
 		for (let i = 0; i < elements.length; i++) {
@@ -7,10 +7,8 @@ function replace_vars(vars, prefix = "$") {
 	};
 }
 
-replace_vars(new Map([
-	["FULLNAME",	"Brendan Lewis"],
-	["FIRSTNAME",	"Brendan"],
-	["LASTNAME",	"Lewis"],
-	["USERNAME",	"@craftablescience"],
+replace_vars('$', new Map([
+	["FULLNAME",	"brendan lewis"],
+	["USERNAME",	"craftablescience"],
 	["YEAR",		String(new Date().getFullYear())]
 ]));

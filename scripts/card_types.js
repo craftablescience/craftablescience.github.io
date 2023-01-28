@@ -8,9 +8,9 @@ customElements.define("project-card", class extends HTMLElement {
 
 		let projectUrl = "";
 		if (this.hasAttribute("mod-link")) {
-			projectUrl = `<p><a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download from CurseForge</a></p>`;
+			projectUrl = `<p class="align-center"><a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download from CurseForge</a></p>`;
 		} else if (this.hasAttribute("play-link")) {
-			projectUrl = `<p><a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a></p>`;
+			projectUrl = `<p class="align-center"><a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a></p>`;
 		}
 
 		this.innerHTML = `
@@ -20,7 +20,7 @@ customElements.define("project-card", class extends HTMLElement {
 				<h4 class="card-subtitle align-center">${this.getAttribute("subtitle")}</h4>
 				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
 				<br />
-				<p><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
+				<p class="align-center"><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>
 				${projectUrl}
 			</div>
 		`;
