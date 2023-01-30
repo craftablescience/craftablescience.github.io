@@ -2,6 +2,7 @@
 /* Global variables and styles */
 /*******************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 :root {
@@ -42,6 +43,10 @@ body {
 	grid-template: auto / auto auto;
 }
 
+.emoji {
+	font-family: "Noto Color Emoji", "Ubuntu Mono", monospace;
+}
+
 a {
 	color: var(--color-text);
 }
@@ -58,16 +63,20 @@ p {
 }
 
 p,
-a {
+a,
+summary,
+td {
 	font-size: var(--text-size);
 }
 
-@supports(background-clip: text) {
-	.enby {
-		color: #0000;
-		background-clip: text;
-		background-image: linear-gradient(90deg, #fdf52f,#fdf52f 25%,#fff 25%,#fff 50%,#9d5ad2 50%,#9d5ad2 75%,#000 75%,#000);
-	}
+summary {
+	text-decoration: underline;
+	color: var(--color-text);
+	cursor: pointer;
+}
+
+summary:hover {
+	color: var(--color-text-highlight);
 }
 
 
@@ -153,12 +162,59 @@ nav > *:hover {
 	text-decoration: underline;
 }
 
-nav > *:nth-child(2n) {
+nav > *:nth-child(even) {
 	background-color: var(--card-background-1);
 }
 
-nav > *:nth-child(2n + 1) {
+nav > *:nth-child(odd) {
 	background-color: var(--card-background-2);
+}
+
+
+/*********/
+/* About */
+/*********/
+
+@supports(background-clip: text) {
+	.trans,
+	.enby {
+		color: #0000;
+		background-clip: text;
+	}
+
+	.trans {
+		background-image: linear-gradient(90deg, #5ccefa, #5ccefa 20%, #f6a8b7 20%, #f6a8b7 40%, #fff 40%, #fff 60%, #f6a8b7 60%, #f6a8b7 80%, #5ccefa 80%, #5ccefa);
+	}
+
+	.enby {
+		background-image: linear-gradient(90deg, #fdf52f, #fdf52f 25%, #fff 25%, #fff 50%, #9d5ad2 50%, #9d5ad2 75%, #000 75%, #000);
+	}
+}
+
+#language-table {
+	margin: 8px 0;
+	border: 4px solid var(--card-background-2);
+	border-collapse: collapse;
+}
+
+#language-table > tbody > tr > td {
+	padding: 8px;
+}
+
+#language-table > tbody > tr:nth-child(odd) {
+	background-color: #4b1073;
+}
+
+#language-table > tbody > tr:nth-child(even) {
+	background-color: #59108c;
+}
+
+#language-table > tbody > tr:not(:last-of-type) {
+	border-bottom: 3px solid #57009180;
+}
+
+#language-table > tbody > tr > td:nth-child(even) {
+	background-color: #00000018;
 }
 
 
@@ -192,11 +248,11 @@ main {
 	flex-flow: column nowrap;
 }
 
-.card:nth-child(2n + 1) {
+.card:nth-child(odd) {
 	background-color: var(--card-background-1);
 }
 
-.card:nth-child(2n) {
+.card:nth-child(even) {
 	background-color: var(--card-background-2);
 }
 
@@ -247,6 +303,10 @@ footer {
 /*****************/
 /* Helper styles */
 /*****************/
+
+.shadow-border {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
 
 .fixed-background {
 	background-attachment: fixed;

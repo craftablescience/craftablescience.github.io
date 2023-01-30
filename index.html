@@ -48,51 +48,61 @@
 				</aside>
 
 				<nav class="flex-horizontal flex-center card-bg align-center">
-					<!--<a href="#about">about</a>-->
+					<a href="#about">about</a>
 					<a href="#game-dev">game dev</a>
 					<a href="#libraries">libraries</a>
 					<a href="#minecraft-mods">minecraft mods</a>
 					<a href="#research">research</a>
+					<a href="#miscellaneous">miscellaneous</a>
 				</nav>
 			</div>
 		</header>
 
 		<main>
-			<!--
 			<section id="about" class="full-width">
 				<div class="card-header no-margin">
 					<h2 class="align-center">about</h2>
 				</div>
 				<div class="card has-vars">
-					<p>Hello! I'm a nerdy <abbr class="enby" title="enby: nonbinary person">enby</abbr> girl who loves C++ a little too much for her own good. I go by they/she 😸</p>
+					<p>Hi! I'm a nerdy <abbr class="trans" title="transgender">trans</abbr> <abbr class="enby" title="nonbinary person">enby</abbr> who loves C++ a little too much for her own good. I use they/she pronouns <span class="emoji">😸</span></p>
 				</div>
-				<div class="card">
-					<p>Some languages I know:</p>
-					<table>
+				<details class="card">
+					<summary>Programming languages I know</summary>
+					<table id="language-table" class="shadow-border">
 						<tr>
 							<td>2014</td>
 							<td>Python</td>
-							<td>The first real programming language I ever learned.</td>
+							<td>The first real programming language I ever learned. I used <a href="https://codingbat.com/python" target="_blank" rel="noopener noreferrer">CodingBat</a> to practice, and didn't do anything complex with it until 2016 when I made a voice-activated computer assistant.</td>
 						</tr>
 						<tr>
-							<td>2016</td>
+							<td>2014</td>
 							<td>HTML5/CSS3</td>
-							<td>It may not be a programming language but it's important enough to note. I was wholly self-taught. Web development interested me, but it was never something I wanted to focus a career on.</td>
+							<td>It may not be a programming language but it's important enough to note. I was wholly self-taught. Web development interested me, but it was never something I wanted to focus a career on. I used that knowledge to make this website and a website for a school club.</td>
+						</tr>
+						<tr>
+							<td>????</td>
+							<td>JavaScript</td>
+							<td>JavaScript slowly leaked into my head over time. I can't recall a specific time I was actively learning it, but I can use it well now.</td>
 						</tr>
 						<tr>
 							<td>2017</td>
 							<td>Java</td>
-							<td>I maintain that this is objectively not a good language, but the JVM backing it is good software. This was the first language I learned that used braces and ignored indentation, so it was a rude awakening.</td>
+							<td>I maintain that this is objectively not a good language, but the JVM backing it is good software. This was the first language I learned that used braces and semicolons and ignored indentation, so it was a rude awakening to "real languages" different from Python.</td>
 						</tr>
 						<tr>
-							<td>???</td>
-							<td>JavaScript</td>
-							<td>idk</td>
+							<td>2019</td>
+							<td>GDScript</td>
+							<td>GDScript is the custom scripting solution for the Godot Game Engine, which I began using in 2019. It is similar to Python, but with more game dev-specific syntax and native types. It is a game engine that I have used for a long time (without any finished games to show for it).</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>C#</td>
+							<td>It's Java but if Microsoft forked it and implemented boatloads of nice stuff. Pretty fun language!</td>
 						</tr>
 						<tr>
 							<td>2021</td>
 							<td>C++</td>
-							<td>I delayed learning this language because I feared it would be difficult. It was, but it was also very liberating and enjoyable to use.</td>
+							<td>I delayed learning this language because I feared it would be difficult. It was, but it was also very liberating and enjoyable to use. Still my favorite language.</td>
 						</tr>
 						<tr>
 							<td>2021</td>
@@ -101,36 +111,52 @@
 						</tr>
 						<tr>
 							<td>2022</td>
+							<td>TypeScript</td>
+							<td>Much nicer than plain JavaScript. I find it funny how people initially liked dynamic typing, and then projects to add static typing back into dynamically typed languages became popular as time went on.</td>
+						</tr>
+						<tr>
+							<td>2022</td>
 							<td>ARM Assembly</td>
 							<td>Can I say I'm proficient in writing assembly? No, but I do know what compiled languages compile into and how to read assembly.</td>
 						</tr>
 					</table>
 					<p>I'm learning Rust currently, but still not good enough at it to put it in The List.</p>
+				</details>
+				<div class="card">
+					<p>Listed below are some projects that I work on. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition and Chira Engine on a daily basis. Other projects are either in maintenance mode or considered complete.</p>
+					<p>The subheading lists when I began working on a project, it doesn't mean I didn't continue working on it later (which is the case for several projects!)</p>
 				</div>
 			</section>
-			-->
 
 			<section id="game-dev" class="full-width">
 				<div class="card-header">
 					<h2 class="align-center">game dev</h2>
 				</div>
 				<project-card
+					heading="Portal 2: Community Edition"
+					subheading="August 2021"
+					description="This project is based on a legally licensed Source engine branch. We took the CS:GO codebase, the most up-to-date version of the Source engine, and ported Portal 2 gameplay code to it. In the years since then, we have been adding new features to the engine and refactoring old code to make it easier to work with. I work on this project as a C++ programmer under NDA and UI developer."
+					has-disclaimer
+					img-src="images/game-dev/p2ce.jpg"
+					img-alt="A new map, part of the P2:CE campaign"
+					steam-link="https://store.steampowered.com/app/440000/Portal_2_Community_Edition"></project-card>
+				<project-card
 					heading="Chira Engine"
-					subheading="June 2021 to now"
+					subheading="June 2021"
 					description="Chira Engine is a game engine I have been working on for almost two years. It was created to learn C++ and how game engines worked, and it taught me (and continues to teach me) a great deal about both of those subjects, as well as the CMake build system. Runs on Windows, Linux, and macOS."
 					img-src="images/game-dev/chira_engine.png"
 					img-alt="A screenshot of the editor present in Chira Engine. The editor UI was created by frequent contributor / collaborator Ashi"
 					src-link="https://github.com/craftablescience/ChiraEngine"></project-card>
 				<project-card
 					heading="OpenTK Game Engine"
-					subheading="2021"
+					subheading="March 2021"
 					description="This was my first foray into C#. I decided to build a simple game engine using OpenGL for the graphics, Bullet for physics, and FMOD for sound. It currently can create unlit meshes, physics objects, and has several demos in a separate C# project to showcase its functionality. All the engine features are as abstracted as possible."
 					img-src="images/game-dev/opentkgameengine.gif"
 					img-alt="An animated recording of the physics demo included with the game engine"
 					src-link="https://github.com/craftablescience/OpenTKGameEngine"></project-card>
 				<project-card
 					heading="Godot Puzzlemaker"
-					subheading="2021"
+					subheading="October 2020"
 					description="This project aimed to create a quick and easy level editor for the Godot Game Engine, to make rapidly prototyping level layouts possible. No longer will modelers have to spend hours in Blender or similar 3D software! It has a save/load system, supports custom textures and entities, and exports levels to the format used in Portal 2."
 					img-src="images/game-dev/godotpuzzlemaker.png"
 					img-alt="A screenshot of Godot Puzzlemaker running"
@@ -138,7 +164,7 @@
 					play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
 				<project-card
 					heading="Steins;Gate VR Laboratory"
-					subheading="2020"
+					subheading="March 2020"
 					description="This is an application for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
 					img-src="images/game-dev/steins;gate-vr.png"
 					img-alt="Steins;Gate laboratory model in the Unity game engine editor"
@@ -192,7 +218,7 @@
 				</div>
 				<project-card
 					heading='Galacticraft'
-					subheading="February 2019 to now"
+					subheading="February 2019"
 					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
 					has-disclaimer
 					img-src="images/minecraft-mods/galacticraft.png"
@@ -271,6 +297,26 @@
 					img-src="images/research/2017_sciencefair.png"
 					img-alt="A picture of the program made for the experiment"
 					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
+			</section>
+
+			<section id="miscellaneous" class="full-width">
+				<div class="card-header">
+					<h2 class="align-center">miscellaneous</h2>
+				</div>
+				<project-card
+					heading="Morality Core (Discord Bot)"
+					subheading="February 2022"
+					description="This is a Discord bot written specifically for the Portal 2: Community Edition server, although it is also running in a few other servers. It includes moderation utilities and commands, some specifically useful to the P2:CE project."
+					img-src="images/miscellaneous/morality_core.png"
+					img-alt="A screenshot of the bot's Discord profile"
+					src-link="https://github.com/ChaosInitiative/p2ce-discord-bot"></project-card>
+				<project-card
+					heading="Discord Square Theme"
+					subheading="June 2021"
+					description="I was frustrated with the abundance of round elements in the Discord messaging platform, so I made a custom CSS theme to disable rounding on UI elements, excepting some SVGs where it would be technically challenging to modify. I collaborated with a friend to remake several SVG icons to remove rounding, and replace them with CSS."
+					img-src="images/miscellaneous/discord_square_theme.png"
+					img-alt="A conversation I had on a public Discord server while writing the theme. Two users express their interest in the project as I complain how difficult it is to remove SVG masks without breaking the visuals of the entire application"
+					src-link="https://github.com/craftablescience/Discord-Square-Theme"></project-card>
 			</section>
 
 			<footer class="card-header">
