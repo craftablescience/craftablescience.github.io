@@ -28,8 +28,8 @@
 		<header>
 			<div class="sticky">
 				<aside id="info-panel" class="card-bg align-center">
-					<a href="https://twitter.com/lynasdf/status/1485015096321581061" target="_blank" rel="noopener noreferrer">
-						<img id="profile-picture" src="images/about/xenia_trans.png" alt="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system and my profile picture on most sites." />
+					<a href="http://xenia-linux-site.glitch.me" target="_blank" rel="noopener noreferrer">
+						<img id="profile-picture" src="images/about/xenia_trans.webp" alt="An AI-generated drawing of Xenia, an old potential mascot for the Linux operating system and my profile picture on most sites." />
 					</a>
 					<div id="contact-names" class="has-vars">
 						<h1 title="this name kind of sucks, but it's my legal name">$FULLNAME</h1>
@@ -138,14 +138,14 @@
 					subheading="August 2021"
 					description="This project is based on a legally licensed Source engine branch. We took the CS:GO codebase, the most up-to-date version of the Source engine, and ported Portal 2 gameplay code to it. In the years since then, we have been adding new features to the engine and refactoring old code to make it easier to work with. I work on this project as a C++ programmer under NDA and UI developer."
 					has-disclaimer
-					img-src="images/game-dev/p2ce.jpg"
+					img-src="images/game-dev/p2ce.webp"
 					img-alt="A new map, part of the P2:CE campaign"
 					steam-link="https://store.steampowered.com/app/440000/Portal_2_Community_Edition"></project-card>
 				<project-card
 					heading="Chira Engine"
 					subheading="June 2021"
 					description="Chira Engine is a game engine I have been working on for almost two years. It was created to learn C++ and how game engines worked, and it taught me (and continues to teach me) a great deal about both of those subjects, as well as the CMake build system. Runs on Windows, Linux, and macOS."
-					img-src="images/game-dev/chira_engine.png"
+					img-src="images/game-dev/chira_engine.webp"
 					img-alt="A screenshot of the editor present in Chira Engine. The editor UI was created by frequent contributor / collaborator Ashi"
 					src-link="https://github.com/craftablescience/ChiraEngine"></project-card>
 				<project-card
@@ -159,7 +159,7 @@
 					heading="Godot Puzzlemaker"
 					subheading="October 2020"
 					description="This project aimed to create a quick and easy level editor for the Godot Game Engine, to make rapidly prototyping level layouts possible. No longer will modelers have to spend hours in Blender or similar 3D software! It has a save/load system, supports custom textures and entities, and exports levels to the format used in Portal 2."
-					img-src="images/game-dev/godotpuzzlemaker.png"
+					img-src="images/game-dev/godotpuzzlemaker.webp"
 					img-alt="A screenshot of Godot Puzzlemaker running"
 					src-link="https://github.com/craftablescience/GodotPuzzlemaker"
 					play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
@@ -167,7 +167,7 @@
 					heading="Steins;Gate VR Laboratory"
 					subheading="March 2020"
 					description="This is an application for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
-					img-src="images/game-dev/steins;gate-vr.png"
+					img-src="images/game-dev/steins;gate-vr.webp"
 					img-alt="Steins;Gate laboratory model in the Unity game engine editor"
 					src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 			</section>
@@ -180,35 +180,35 @@
 					heading="armcomp"
 					subheading="October 2022"
 					description="When I took a class on ARM assembly at university, I knew I did not want to constantly write boilerplate, especially when passing values to functions and storing the current registers every time. Then I realized I could do what the developers of C did and make my own language. It supports everything I needed to do for my class except working with arrays. By the end of the class I was in the middle of rewriting the parser, an effort I abandoned when I no longer had the need to use the language."
-					img-src="images/libraries/armcomp.png"
+					img-src="images/libraries/armcomp.webp"
 					img-alt="A comparison of armcomp code, versus the generated assembly"
 					src-link="https://github.com/craftablescience/armcomp"></project-card>
 				<project-card
 					heading="cstringpp"
 					subheading="September 2022"
 					description="This header-only library was an experiment to see if I could create fully constexpr strings in C++. It ended up being fairly trivial, and supports several constexpr reimplementations of C string functions."
-					img-src="images/libraries/cstringpp.png"
+					img-src="images/libraries/cstringpp.webp"
 					img-alt="A screenshot of the cstringpp source code"
 					src-link="https://github.com/craftablescience/cstringpp"></project-card>
 				<project-card
 					heading="VPKTool"
 					subheading="July 2022"
 					description="This is a simple library to read VPK (Valve PacK) files, which are similar to zip files in that they store collections of files, but different from zip in both structure of the entries, and the fact that it stores files without compression. It allows users to list stored file entries in a VPK, and retrieve file contents."
-					img-src="images/libraries/vpktool.png"
+					img-src="images/libraries/vpktool.webp"
 					img-alt="A screenshot of vpktool listing file entries in Portal 2's VPK"
 					src-link="https://github.com/craftablescience/VPKTool"></project-card>
 				<project-card
 					heading="LibLoader"
 					subheading="December 2021"
 					description="This header-only library allows users to load and call functions from dynamic libraries (.DLL on Windows, .DYLIB on macOS, .SO on Linux). Any return value is stored in the second parameter of the call function. It was created to interface with the Steam API without using proprietary headers, and so MSVC-compiled libraries would work with MinGW-compiled applications."
-					img-src="images/libraries/libloader.png"
+					img-src="images/libraries/libloader.webp"
 					img-alt="A screenshot of the LibLoader test code"
 					src-link="https://github.com/craftablescience/LibLoader"></project-card>
 				<project-card
 					heading="vmflib-godot"
 					subheading="March 2021"
 					description="This is a rewrite of a VMF (Valve Map Format) creation library, previously in Python, to the Godot Game Engine's scripting language GDScript. It is an addon that allows Godot applications and games to create maps for Source engine games."
-					img-src="images/libraries/hammer_vdc.png"
+					img-src="images/libraries/hammer_vdc.webp"
 					img-alt="A screenshot of the Hammer map editor with a Half-Life 2 map open"
 					src-link="https://github.com/craftablescience/vmflib-godot"></project-card>
 			</section>
@@ -222,14 +222,14 @@
 					subheading="February 2019"
 					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is a remake of an older mod, which means it runs on newer versions of the game. I have added the sound registry code, the blockstates, models, and recipes for many blocks and items, Walkway blocks which connect to other walkways nearby, a mixin to fix particle gravity and fall damage calculations on celestial bodies with a different gravity value from the Overworld (Earth), and more."
 					has-disclaimer
-					img-src="images/minecraft-mods/galacticraft.png"
+					img-src="images/minecraft-mods/galacticraft.webp"
 					img-alt="A screenshot of some Galacticraft features I implemented"
 					src-link="https://github.com/TeamGalacticraft/Galacticraft"></project-card>
 				<project-card
 					heading='Windowed Chat'
 					subheading="November 2020"
 					description='This mod aims to add a new window to the video game Minecraft. Instead of having a chat box inside the game, obscuring parts of the screen, the chat is displayed in a separate window outside of the main game window. It supports all the features the regular chat does, including text formatting and clickable links. It also has a "DMs" panel, where players can send private messages to other players in a convenient UI, rather than typing "/msg PlayerNameHere message contents" and having to constantly scan the incoming chat for a reply. More features are planned in the future.'
-					img-src="images/minecraft-mods/windowed_chat.png"
+					img-src="images/minecraft-mods/windowed_chat.webp"
 					img-alt="A picture of the mod running"
 					src-link="https://github.com/craftablescience/WindowedChat"
 					mod-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
@@ -246,7 +246,7 @@
 					subheading="June 2020"
 					description="This mod aims to add other solar systems, planets, and moons to a video game called Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
 					has-disclaimer
-					img-src="images/minecraft-mods/IEP.jpg"
+					img-src="images/minecraft-mods/IEP.webp"
 					img-alt="A rocket I modelled for Interstellar: Exoplanets"
 					src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
 					mod-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
@@ -260,42 +260,42 @@
 					heading="Antivirus Database Scanner"
 					subheading="Summer 2019"
 					description="The aim of this project was to see the distribution of protection types between antiviruses, and measure how many threats, risks, and vulnerabilities each one had stored in their public database. The antiviruses studied were Symantec, Kaspersky, and TrendMicro. The collection of data was undertaken by a custom Python program, and the data was analyzed and charted by another Python program. This research was done for an internship at Delaware State University, under Dr. Kul, in the summer of 2019."
-					img-src="images/research/2019_research.jpg"
+					img-src="images/research/2019_research.webp"
 					img-alt="My project display board"
 					src-link="https://github.com/craftablescience/Antivirus-Database-Scanner"></project-card>
 				<project-card
 					heading="Analyzing Spectra of LEDs"
 					subheading="Summer 2018"
 					description="In this project, I measured the spectra of a large amount of LEDs, for science! The LED colors were white, red, blue, yellow, and green. The data gathered was over 2 dimensions, but using Principal Component Analysis I could reduce it to a 2D scatter plot, to visualize the findings. The data shows that each LED has a slightly different spectra due to small manufacturing differences, meaning in the future they could be used as a secure physical key. This research was done for an internship at Delaware State University, under Dr. Markushin, in the summer of 2018."
-					img-src="images/research/2018_research.jpg"
+					img-src="images/research/2018_research.webp"
 					img-alt="My project display board"
 					src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
 				<project-card
 					heading="Science Fair 2020 (VR Dual-Eye Camera Feed)"
 					subheading="January 2020"
 					description="My submission for the science fair in 2020 was a security device that could add a sense of depth to footage, viewable in the Oculus Quest VR headset. I used two Raspberrry Pi's with camera modules attached, to livestream their camera feeds over the Internet. Then, I created a Unity application to capture the data and relay it to each lens of the headset. Ultimately, however, it was a failure, as the two camera streams did not merge together in the headset as I had hoped. Instead it just gives the user the power to see cross-eyed."
-					img-src="images/research/2020_sciencefair.png"
+					img-src="images/research/2020_sciencefair.webp"
 					img-alt="A picture of the camera setup"
 					src-link="https://github.com/craftablescience/SecurityCameraWithDepth"></project-card>
 				<project-card
 					heading="Science Fair 2019 (Automated Cat Feeder)"
 					subheading="January 2019"
 					description="My submission for the science fair in 2019 was an automated cat feeder. It was powered by a LEGO motor attached to a Raspberry Pi, which turned a knob on a cheap manual cat feeder. It could be triggered automatically at a set time, or manually from an android app."
-					img-src="images/research/2019_sciencefair.jpg"
+					img-src="images/research/2019_sciencefair.webp"
 					img-alt="A picture of the cat feeder"
 					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 				<project-card
 					heading="Science Fair 2018 (Emotion Recognition)"
 					subheading="January 2018"
 					description="My submission for the science fair in 2018 was a program that determined the accuracy of two emotion recognition services, F.A.C.E. and SkyBiometry."
-					img-src="images/research/2018_sciencefair.jpg"
+					img-src="images/research/2018_sciencefair.webp"
 					img-alt="A list of image files used in the experiment"
 					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 				<project-card
 					heading="Science Fair 2017 (Reaction Times)"
 					subheading="January 2017"
 					description="My submission for the science fair in 2017 was a program that measured reaction times with a Raspberry Pi. It then calculated the distance a car would have travelled during that time."
-					img-src="images/research/2017_sciencefair.png"
+					img-src="images/research/2017_sciencefair.webp"
 					img-alt="A picture of the program made for the experiment"
 					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 			</section>
@@ -308,14 +308,14 @@
 					heading="Morality Core (Discord Bot)"
 					subheading="February 2022"
 					description="This is a Discord bot written specifically for the Portal 2: Community Edition server, although it is also running in a few other servers. It includes moderation utilities and commands, some specifically useful to the P2:CE project."
-					img-src="images/miscellaneous/morality_core.png"
+					img-src="images/miscellaneous/morality_core.webp"
 					img-alt="A screenshot of the bot's Discord profile"
 					src-link="https://github.com/ChaosInitiative/p2ce-discord-bot"></project-card>
 				<project-card
 					heading="Discord Square Theme"
 					subheading="June 2021"
 					description="I was frustrated with the abundance of round elements in the Discord messaging platform, so I made a custom CSS theme to disable rounding on UI elements, excepting some SVGs where it would be technically challenging to modify. I collaborated with a friend to remake several SVG icons to remove rounding, and replace them with CSS."
-					img-src="images/miscellaneous/discord_square_theme.png"
+					img-src="images/miscellaneous/discord_square_theme.webp"
 					img-alt="A conversation I had on a public Discord server while writing the theme. Two users express their interest in the project as I complain how difficult it is to remove SVG masks without breaking the visuals of the entire application"
 					src-link="https://github.com/craftablescience/Discord-Square-Theme"></project-card>
 			</section>
