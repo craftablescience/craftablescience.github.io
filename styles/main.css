@@ -2,7 +2,6 @@
 /* Global variables and styles */
 /*******************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 :root {
@@ -41,10 +40,6 @@ body {
 
 	display: grid;
 	grid-template: auto / auto auto;
-}
-
-.emoji {
-	font-family: "Noto Color Emoji", "Ubuntu Mono", monospace;
 }
 
 a {
