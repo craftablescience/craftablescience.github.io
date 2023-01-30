@@ -5,8 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 :root {
-	scroll-behavior: smooth;
-
 	--page-background: rgb(80, 0, 80);
 	--page-background-dot: #68167a;
 	--page-background-dot-size: 5%;
@@ -17,6 +15,27 @@
 	--text-size: 1.2rem;
 	--margin-size: 24px;
 	--margin-size-edge: calc(var(--margin-size) + 4px);
+	--scrollbar-size: 10px;
+
+	scrollbar-color: var(--card-background-2) var(--page-background);
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: var(--scrollbar-size);
+	height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--card-background-2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--card-background-1);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--page-background);
 }
 
 ::selection {
