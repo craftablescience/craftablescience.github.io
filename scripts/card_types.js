@@ -8,16 +8,16 @@ customElements.define("project-card", class extends HTMLElement {
 
 		let sourceUrl = "";
 		if (this.hasAttribute("src-link")) {
-			sourceUrl = `<p class="align-center"><a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a></p>`;
+			sourceUrl = `<a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a>`;
 		}
 
 		let projectUrl = "";
 		if (this.hasAttribute("mod-link")) {
-			projectUrl = `<p class="align-center"><a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download from CurseForge</a></p>`;
+			projectUrl = `<a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download from CurseForge</a>`;
 		} else if (this.hasAttribute("play-link")) {
-			projectUrl = `<p class="align-center"><a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a></p>`;
+			projectUrl = `<a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a>`;
 		} else if (this.hasAttribute("steam-link")) {
-			projectUrl = `<p class="align-center"><a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">View Steam Store Page</a></p>`;
+			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">View Steam Store Page</a>`;
 		}
 
 		this.innerHTML = `
@@ -25,10 +25,12 @@ customElements.define("project-card", class extends HTMLElement {
 			<div>
 				<h2 class="align-center">${this.getAttribute("heading")}</h2>
 				<h3 class="card-subheading align-center">${this.getAttribute("subheading")}</h3>
-				<p class="align-justify">${disclaimer}${this.getAttribute("description")}</p>
+				<p class="indent-paragraphs">${disclaimer}${this.getAttribute("description")}</p>
 				<br />
-				${sourceUrl}
-				${projectUrl}
+				<div class="card-link-list">
+					${sourceUrl}
+					${projectUrl}
+				</div>
 			</div>
 		`;
 
@@ -42,7 +44,18 @@ customElements.define("project-card", class extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return ["heading", "subheading", "description", "has-disclaimer", "img-src", "img-alt", "src-link", "mod-link", "play-link"];
+		return [
+			"heading",
+			"subheading",
+			"description",
+			"has-disclaimer",
+			"img-src",
+			"img-alt",
+			"src-link",
+			"mod-link",
+			"play-link",
+			"steam-link"
+		];
 	}
 
 	attributeChangedCallback(_name, _oldValue, _newValue) {

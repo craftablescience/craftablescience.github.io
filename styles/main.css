@@ -309,6 +309,17 @@ project-card > :nth-child(2) {
 	grid-row: 1;
 }
 
+project-card > :nth-child(2) > p {
+	text-align: justify;
+}
+
+project-card .card-link-list > a {
+	display: block;
+	text-align: center;
+	width: fit-content;
+	margin: 0 auto;
+}
+
 footer {
 	margin-bottom: var(--margin-size);
 }
@@ -387,7 +398,7 @@ p.indent-paragraphs {
 /* Fun mobile changes */
 /**********************/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	section:not(#about) {
 		display: flex;
 		flex-direction: column;
@@ -412,6 +423,10 @@ p.indent-paragraphs {
 		margin-top: 16px;
 		grid-column: 1;
 		grid-row: 2;
+	}
+
+	project-card > :nth-child(2) > p {
+		text-align: left;
 	}
 }
 
