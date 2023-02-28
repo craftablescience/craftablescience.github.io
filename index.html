@@ -205,7 +205,7 @@
 				<project-card
 					heading="LibLoader"
 					subheading="December 2021"
-					description="This header-only library allows users to load and call functions from dynamic libraries (.DLL on Windows, .DYLIB on macOS, .SO on Linux). Any return value is stored in the second parameter of the call function. It was created to interface with the Steam API without using proprietary headers, and so MSVC-compiled libraries would work with MinGW-compiled applications."
+					description="This header-only library allows users to load and call functions from dynamic libraries (.DLL on Windows, .DYLIB on macOS, .SO on Linux). The call function returns a std::optional, in case the function was not found in the library or an error was encountered. It can be safely dereferenced to retrieve the returned value. If the function returns void, call will return void as well. It was created to interface with the Steam API without using proprietary headers, and so MSVC-compiled libraries would work with MinGW-compiled applications."
 					img-src="images/libraries/libloader.webp"
 					img-alt="A screenshot of the LibLoader test code"
 					src-link="https://github.com/craftablescience/LibLoader"></project-card>
