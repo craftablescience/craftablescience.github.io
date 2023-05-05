@@ -18,6 +18,8 @@ customElements.define("project-card", class extends HTMLElement {
 			projectUrl = `<a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a>`;
 		} else if (this.hasAttribute("steam-link")) {
 			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">View Steam Store Page</a>`;
+		} else if (this.hasAttribute("custom-link")) {
+			projectUrl = `<a href="${this.getAttribute("custom-link")}" target="_blank" rel="noopener noreferrer">view project details</a>`;
 		}
 
 		this.innerHTML = `
@@ -54,7 +56,8 @@ customElements.define("project-card", class extends HTMLElement {
 			"src-link",
 			"mod-link",
 			"play-link",
-			"steam-link"
+			"steam-link",
+			"custom-link",
 		];
 	}
 
