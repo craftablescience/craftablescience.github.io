@@ -10,5 +10,4 @@ function replace_vars(prefix, vars) {
 replace_vars('$', new Map([
 	["FULLNAME",	"brendan lewis"],
 	["USERNAME",	"craftablescience"],
-	["YEAR",		String(new Date().getFullYear())]
 ]));
