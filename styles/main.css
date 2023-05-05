@@ -299,6 +299,7 @@ project-card {
 
 project-card > :nth-child(1) {
 	width: 408px;
+	margin: auto 0;
 	grid-column: 1;
 	grid-row: 1;
 }
