@@ -204,6 +204,15 @@ header {
 	margin-top: var(--margin-size);
 }
 
+#accessibility-panel input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff0;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
 
 /*********/
 /* About */
@@ -424,6 +433,10 @@ p.indent-paragraphs {
 
 .text-underline {
 	text-decoration: underline;
+}
+
+.text-monospace {
+	font-family: "Ubuntu Mono", monospace !important;
 }
 
 

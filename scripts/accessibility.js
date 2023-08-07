@@ -34,6 +34,12 @@ function toggleCardColor() {
 	for (const [variable, value] of Object.entries(Accessibility[current_card_color].color_card)) {
 		root.style.setProperty(variable, value);
 	}
+	const label = document.getElementById('accessibility-black-text-label');
+	if (current_card_color === 'Default') {
+		label.innerHTML = label.innerHTML.replace('[x]', '[ ]');
+	} else {
+		label.innerHTML = label.innerHTML.replace('[ ]', '[x]');
+	}
 }
 
 function toggleFont() {
@@ -41,6 +47,12 @@ function toggleFont() {
 	const root = document.querySelector(":root");
 	for (const [variable, value] of Object.entries(Accessibility[current_font].font)) {
 		root.style.setProperty(variable, value);
+	}
+	const label = document.getElementById('accessibility-serif-font-label');
+	if (current_font === 'Default') {
+		label.innerHTML = label.innerHTML.replace('[x]', '[ ]');
+	} else {
+		label.innerHTML = label.innerHTML.replace('[ ]', '[x]');
 	}
 }
 
