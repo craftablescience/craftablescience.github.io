@@ -22,6 +22,7 @@
 		<script src="scripts/bingle.js" type="text/javascript" async></script>
 		<script src="scripts/card_types.js" type="text/javascript"></script>
 		<script src="scripts/replace_vars.js" type="text/javascript" defer></script>
+		<script src="scripts/accessibility.js" type="text/javascript" defer></script>
 	</head>
 
 	<body>
@@ -45,7 +46,7 @@
 					</div>
 				</aside>
 
-				<nav class="flex-horizontal flex-center card-bg align-center">
+				<nav class="nav-list flex-horizontal flex-center card-bg align-center">
 					<a href="#about">about</a>
 					<a href="#game-dev">game dev</a>
 					<a href="#hackathons">hackathons</a>
@@ -54,13 +55,25 @@
 					<a href="#minecraft-mods">minecraft mods</a>
 					<a href="#research">research</a>
 				</nav>
+
+				<aside id="accessibility-panel" class="nav-list flex-horizontal flex-center card-bg align-center">
+					<p class="text-underline text-bold">accessibility</p>
+					<div>
+						<label for="accessibility-black-text">black text</label>
+						<input type="checkbox" id="accessibility-black-text" onclick="toggleCardColor()">
+					</div>
+					<div>
+						<label for="accessibility-serif-font">serif font</label>
+						<input type="checkbox" id="accessibility-serif-font" onclick="toggleFont()">
+					</div>
+				</aside>
 			</div>
 		</header>
 
 		<main>
 			<section id="about" class="full-width">
 				<div class="card-header no-margin">
-					<h2 class="align-center">about</h2>
+					<h2 class="align-center" tabindex="0">about</h2>
 				</div>
 				<div class="card has-vars">
 					<!-- My portfolio site isn't ready for this, maybe in a year? -->
@@ -134,7 +147,7 @@
 
 			<section id="game-dev" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">game dev</h2>
+					<h2 class="align-center" tabindex="0">game dev</h2>
 				</div>
 				<project-card
 					heading="Portal 2: Community Edition"
@@ -185,7 +198,7 @@
 
 			<section id="hackathons" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">hackathons</h2>
+					<h2 class="align-center" tabindex="0">hackathons</h2>
 				</div>
 				<project-card
 					heading="GO-DE"
@@ -200,7 +213,7 @@
 
 			<section id="libraries" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">libraries</h2>
+					<h2 class="align-center" tabindex="0">libraries</h2>
 				</div>
 				<project-card
 					heading="armcomp"
@@ -241,7 +254,7 @@
 
 			<section id="discord" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">discord</h2>
+					<h2 class="align-center" tabindex="0">discord</h2>
 				</div>
 				<project-card
 					heading="Oracle Turret Discord Bot"
@@ -276,7 +289,7 @@
 
 			<section id="minecraft-mods" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">minecraft mods</h2>
+					<h2 class="align-center" tabindex="0">minecraft mods</h2>
 				</div>
 				<project-card
 					heading='Galacticraft'
@@ -315,7 +328,7 @@
 
 			<section id="research" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center">research</h2>
+					<h2 class="align-center" tabindex="0">research</h2>
 				</div>
 				<project-card
 					heading="Antivirus Database Scanner"

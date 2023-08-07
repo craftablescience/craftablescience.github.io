@@ -2,7 +2,7 @@
 /* Global variables and styles */
 /*******************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=EB+Garamond&display=swap');
 
 :root {
 	--page-background: rgb(80, 0, 80);
@@ -11,7 +11,9 @@
 	--card-background-1: rgb(142, 22, 90);
 	--card-background-2: rgb(162, 16, 99);
 	--color-text: white;
+	--color-text-dark: #eee;
 	--color-text-highlight: rgb(160, 160, 255);
+	--text-font: "Ubuntu Mono", monospace;
 	--text-size: 1.2rem;
 	--margin-size: 24px;
 	--margin-size-edge: calc(var(--margin-size) + 4px);
@@ -43,7 +45,7 @@
 }
 
 body {
-    background-color: var(--page-background);
+	background-color: var(--page-background);
 	background-image:
 		radial-gradient(at 25% 25%, var(--page-background-dot) 0 var(--page-background-dot-size), transparent 0),
 		radial-gradient(at 75% 75%, var(--page-background) 0 var(--page-background-dot-size), transparent 0);
@@ -52,7 +54,7 @@ body {
 	background-position: 8px 8px;
 
 	color: var(--color-text);
-	font-family: "Ubuntu Mono", monospace;
+	font-family: var(--text-font);
 
 	margin: var(--margin-size) 0 0 0;
 	padding: 0;
@@ -78,6 +80,7 @@ p {
 
 p,
 a,
+label,
 summary,
 td {
 	font-size: var(--text-size);
@@ -152,7 +155,7 @@ header {
 	text-align: center;
 }
 
-nav.card {
+.nav-list.card {
 	margin: var(--margin-size) auto;
 	padding: 0;
 	height: fit-content;
@@ -166,22 +169,39 @@ nav.card {
 	flex-flow: column;
 }
 
-nav > * {
+.nav-list > * {
 	padding: 4px 8px;
 	width: 100%;
 	text-decoration: none;
 }
 
-nav > *:hover {
+.nav-list > *:hover {
 	text-decoration: underline;
 }
 
-nav > *:nth-child(even) {
+.nav-list > *:hover * {
+	cursor: pointer;
+}
+
+.nav-list > p:hover * {
+	cursor: default;
+}
+
+.nav-list > *:nth-child(even) {
 	background-color: var(--card-background-1);
 }
 
-nav > *:nth-child(odd) {
+.nav-list > *:nth-child(odd) {
 	background-color: var(--card-background-2);
+}
+
+
+/*****************/
+/* Accessibility */
+/*****************/
+
+#accessibility-panel {
+	margin-top: var(--margin-size);
 }
 
 
@@ -271,7 +291,7 @@ main {
 }
 
 .card-subheading {
-	color: #EEE;
+	color: var(--color-text-dark);
 	margin-bottom: 16px;
 }
 
@@ -392,6 +412,18 @@ footer {
 .indent-paragraphs > p,
 p.indent-paragraphs {
 	text-indent: 2em;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-underline {
+	text-decoration: underline;
 }
 
 

@@ -25,7 +25,7 @@ customElements.define("project-card", class extends HTMLElement {
 		this.innerHTML = `
 			<img src="${this.getAttribute("img-src")}" alt="${this.getAttribute("img-alt")}" title="${this.getAttribute("img-alt")}" class="shadow-border" />
 			<div>
-				<h2 class="align-center">${this.getAttribute("heading")}</h2>
+				<h2 class="align-center" tabindex="0">${this.getAttribute("heading")}</h2>
 				<h3 class="card-subheading align-center">${this.getAttribute("subheading")}</h3>
 				<p class="indent-paragraphs">${disclaimer}${this.getAttribute("description")}</p>
 				<br />
