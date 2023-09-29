@@ -130,8 +130,8 @@ header {
 #profile-picture {
 	width: 128px;
 	height: 128px;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
 	padding-top: 8px;
 }
 
