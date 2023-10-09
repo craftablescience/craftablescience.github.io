@@ -4,6 +4,8 @@ customElements.define("project-card", class extends HTMLElement {
 		let disclaimer = "";
 		if (this.hasAttribute("has-disclaimer")) {
 			disclaimer = "<em>I am a member of a team that works on this project.</em> ";
+		} else if (this.hasAttribute("has-past-disclaimer")) {
+			disclaimer = "<em>I am a member of a team that worked on this project.</em> ";
 		}
 
 		let sourceUrl = "";
@@ -51,6 +53,7 @@ customElements.define("project-card", class extends HTMLElement {
 			"subheading",
 			"description",
 			"has-disclaimer",
+			"has-past-disclaimer",
 			"img-src",
 			"img-alt",
 			"src-link",
