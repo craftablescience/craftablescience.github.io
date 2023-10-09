@@ -218,6 +218,7 @@ header {
 /* About */
 /*********/
 
+/*
 @supports(background-clip: text) {
 	.trans,
 	.enby {
@@ -233,6 +234,7 @@ header {
 		background-image: linear-gradient(90deg, #fdf52f, #fdf52f 25%, #fff 25%, #fff 50%, #9d5ad2 50%, #9d5ad2 75%, #000 75%, #000);
 	}
 }
+*/
 
 #language-table {
 	margin: 8px 0;
