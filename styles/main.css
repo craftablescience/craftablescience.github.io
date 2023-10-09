@@ -128,16 +128,16 @@ header {
 	margin-bottom: var(--margin-size);
 }
 
+#info-panel > * {
+	margin: 8px 16px;
+}
+
 #profile-picture {
 	width: 128px;
 	height: 128px;
 	border-bottom-left-radius: 40%;
 	border-bottom-right-radius: 40%;
-	padding-top: 8px;
-}
-
-#contact-names {
-	margin: 0 16px;
+	margin-top: 0;
 }
 
 #contact-names > * {
@@ -146,7 +146,7 @@ header {
 }
 
 #contact-links {
-	margin: 20px 0 16px 0;
+	margin-bottom: 16px;
 }
 
 #contact-links > a {
