@@ -110,6 +110,7 @@ header {
 }
 
 .sticky {
+	/*noinspection CssInvalidPropertyValue*/
 	position: -webkit-sticky;
 	position: sticky;
 	top: var(--margin-size);
