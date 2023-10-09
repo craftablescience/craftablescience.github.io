@@ -327,6 +327,7 @@ section:not(#about) {
 project-card {
 	display: grid !important;
 	grid-template: auto / 408px auto;
+	width: calc(100% - var(--margin-size));
 }
 
 project-card > :nth-child(1) {
