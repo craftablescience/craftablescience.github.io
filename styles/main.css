@@ -2,7 +2,7 @@
 /* Global variables and styles */
 /*******************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=EB+Garamond&display=swap');
 
 :root {
 	--page-background: rgb(80, 0, 80);
@@ -13,7 +13,7 @@
 	--color-text: white;
 	--color-text-dark: #eee;
 	--color-text-highlight: rgb(160, 160, 255);
-	--text-font: "Ubuntu Mono", monospace;
+	--text-font: "JetBrains Mono", monospace;
 	--text-size: 1.2rem;
 	--margin-size: 24px;
 	--margin-size-edge: calc(var(--margin-size) + 4px);

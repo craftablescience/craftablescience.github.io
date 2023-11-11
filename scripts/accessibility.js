@@ -8,7 +8,7 @@ const Accessibility = {
 			'--color-text-highlight': 'rgb(160, 160, 255)',
 		},
 		font: {
-			'--text-font': '"Ubuntu Mono", monospace',
+			'--text-font': '"JetBrains Mono", monospace',
 		},
 	},
 	'Accessible': {
