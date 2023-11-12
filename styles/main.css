@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=EB+Garamond&display=swap');
 
 :root {
+	/* If you change this color, also change the theme color in index.html -> head */
 	--page-background: rgb(80, 0, 80);
 	--page-background-dot: #68167a;
 	--page-background-dot-size: 5%;
