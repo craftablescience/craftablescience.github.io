@@ -114,7 +114,10 @@ header {
 	/*noinspection CssInvalidPropertyValue*/
 	position: -webkit-sticky;
 	position: sticky;
+
 	top: var(--margin-size);
+	max-height: calc(100vh - var(--margin-size));
+	overflow-y: scroll;
 }
 
 #info-panel {
@@ -501,5 +504,7 @@ p.indent-paragraphs {
 
 	.sticky {
 		position: static;
+
+		max-height: initial;
 	}
 }
