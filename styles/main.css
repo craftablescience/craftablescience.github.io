@@ -6,14 +6,14 @@
 
 :root {
 	/* If you change this color, also change the theme color in index.html -> head */
-	--page-background: rgb(80, 0, 80);
-	--page-background-dot: #68167a;
+	--page-background: rgb(0, 11, 80);
+	--page-background-dot: #19167a;
 	--page-background-dot-size: 5%;
-	--card-background-1: rgb(142, 22, 90);
-	--card-background-2: rgb(162, 16, 99);
+	--card-background-1: rgb(21, 70, 128);
+	--card-background-2: rgb(11, 61, 110);
 	--color-text: white;
 	--color-text-dark: #eee;
-	--color-text-highlight: rgb(160, 160, 255);
+	--color-text-highlight: rgb(249, 160, 255);
 	--text-font: "JetBrains Mono", monospace;
 	--text-size: 1.2rem;
 	--margin-size: 24px;

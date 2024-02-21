@@ -10,18 +10,18 @@ customElements.define("project-card", class extends HTMLElement {
 
 		let sourceUrl = "";
 		if (this.hasAttribute("src-link")) {
-			sourceUrl = `<a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">view source</a>`;
+			sourceUrl = `<a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a>`;
 		}
 
 		let projectUrl = "";
 		if (this.hasAttribute("mod-link")) {
-			projectUrl = `<a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">download from curseforge</a>`;
+			projectUrl = `<a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download From CurseForge</a>`;
 		} else if (this.hasAttribute("play-link")) {
-			projectUrl = `<a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">play game</a>`;
+			projectUrl = `<a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a>`;
 		} else if (this.hasAttribute("steam-link")) {
-			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">view steam store page</a>`;
+			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">View Steam Store Page</a>`;
 		} else if (this.hasAttribute("custom-link")) {
-			projectUrl = `<a href="${this.getAttribute("custom-link")}" target="_blank" rel="noopener noreferrer">view project details</a>`;
+			projectUrl = `<a href="${this.getAttribute("custom-link")}" target="_blank" rel="noopener noreferrer">View Project Details</a>`;
 		}
 
 		this.innerHTML = `

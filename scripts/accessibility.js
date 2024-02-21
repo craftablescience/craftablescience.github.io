@@ -1,11 +1,11 @@
 const Accessibility = {
 	'Default': {
 		color_card: {
-			'--card-background-1': 'rgb(142, 22, 90)',
-			'--card-background-2': 'rgb(162, 16, 99)',
+			'--card-background-1': 'rgb(21, 70, 128)',
+			'--card-background-2': 'rgb(11, 61, 110)',
 			'--color-text': 'white',
 			'--color-text-dark': '#eee',
-			'--color-text-highlight': 'rgb(160, 160, 255)',
+			'--color-text-highlight': 'rgb(249, 160, 255)',
 		},
 		font: {
 			'--text-font': '"JetBrains Mono", monospace',
@@ -13,11 +13,11 @@ const Accessibility = {
 	},
 	'Accessible': {
 		color_card: {
-			'--card-background-1': 'rgb(206, 135, 171)',
-			'--card-background-2': 'rgb(219, 158, 189)',
+			'--card-background-1': 'rgb(158, 175, 219)',
+			'--card-background-2': 'rgb(135, 147, 206)',
 			'--color-text': 'black',
 			'--color-text-dark': '#111',
-			'--color-text-highlight': 'rgba(64, 64, 112, 0.7)',
+			'--color-text-highlight': 'rgba(96, 64, 112, 0.7)',
 		},
 		font: {
 			'--text-font': '"EB Garamond", Helvetica, Arial, serif',
