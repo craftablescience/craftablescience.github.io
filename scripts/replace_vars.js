@@ -7,9 +7,8 @@ function replace_vars(prefix, vars) {
 	}
 }
 
-// sacrifices must be made to get a job.
 replace_vars('$', new Map([
-	["FULLNAME", "Brendan Lewis"],
+	["FULLNAME", "Laura Lewis"],
 	["USERNAME", "craftablescience"],
 	["HACK_FLUFFYSNAKE_LINK", "<a href='https://steamcommunity.com/id/FluffySnake/' target='_blank' rel='noopener noreferrer'>FluffySnake</a>"],
 ]));
