@@ -75,7 +75,7 @@
 					<h2 class="align-center" tabindex="0">about</h2>
 				</div>
 				<div class="card has-vars">
-					<p>Hi! I'm a nerdy person who loves C++ a little too much for their own good.</p>
+					<p>Hi! I'm a nerdy person who loves C++ a little too much for her own good.</p>
 				</div>
 				<details class="card">
 					<summary>Programming languages I know</summary>
@@ -138,7 +138,7 @@
 					</table>
 				</details>
 				<div class="card">
-					<p>Listed below are some projects that I work on, or have worked on in the past. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition and Chira Engine on a daily basis. Most other projects are either in maintenance mode or considered complete.</p>
+					<p>Listed below are some projects that I work on, or have worked on in the past. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition and VPKEdit on a daily basis. Most other projects are either in maintenance mode or considered complete.</p>
 					<p>The subheading lists when I began working on a project, it doesn't mean I didn't continue working on it later (which is the case for several projects!)</p>
 				</div>
 			</section>
@@ -150,7 +150,7 @@
 				<project-card
 					heading="VPKEdit"
 					subheading="August 2023"
-					description="VPKEdit is an open source tool that can create, open, extract from and preview the contents of several different archive formats (files that contain other files). As of version 4.1 it supports 10 file formats, and can preview audio formats, text formats, image formats, and compiled Source engine textures and models without having to extract those files onto disk. Incremental file operations like adding or removing files are supported for writable formats. The tool is powered by an open-source C++20 library libvpkedit, which I created for this and other personal projects. I also created a CLI version and a C wrapper of the library."
+					description="VPKEdit is an open source tool that can create, open, extract from and preview the contents of several different archive formats (files that contain other files). As of version 4.2 it supports 10 file formats, and can preview audio formats, text formats, image formats, and compiled Source engine textures and models without having to extract those files onto disk. Incremental file operations like adding or removing files are supported for writable formats. The tool is powered by an open-source C++20 library libvpkedit, which I created for this and other personal projects. I also created a CLI version and a C wrapper of the library. Installers and standalone versions are compiled for Windows and Linux."
 					img-src="https://github.com/craftablescience/VPKEdit/blob/main/branding/screenshot1.png?raw=true"
 					img-alt="A screenshot of the VPKEdit application displaying a wireframe render of a saucepan"
 					src-link="https://github.com/craftablescience/VPKEdit"></project-card>
@@ -170,13 +170,27 @@
 					img-alt="A screenshot of the editor present in Chira Engine. The editor UI was created by frequent contributor / collaborator Ashi"
 					src-link="https://github.com/craftablescience/ChiraEngine"></project-card>
 				<project-card
+					heading="Nostodoxa"
+					subheading="March 2024"
+					description="This is a game I made for a 1 month game jam, where it placed first. All original assets and gameplay was created from scratch in that time interval. In the game, you are tasked with conquering an alien planet (using a laser to eliminate points of interest on a map) without making a mistake (having the laser set to the wrong frequency or power level, hitting a non-target)."
+					img-src="images/game-dev/nostodoxa.webp"
+					img-alt="A dingy room inside a spacecraft. There is a table with a grid and a map on it, as well as a computer screen on the wall"
+					play-link="https://craftablescience.itch.io/nostodoxa"></project-card>
+				<project-card
 					heading="checking out"
 					subheading="March 2023"
-					description="This was a game I made for a 2 week game jam. All assets and gameplay was created from scratch in that time interval save for the font. In the game, you are tasked with moving out of your dorm room (taking 5 objects from your room to your car) without stealing any school-supplied furniture."
+					description="This is a game I made for a 2 week game jam, where it placed third. All assets and gameplay was created from scratch in that time interval save for the font. In the game, you are tasked with moving out of your dorm room (taking 5 objects from your room to your car) without stealing any school-supplied furniture."
 					img-src="images/game-dev/checking_out.webp"
 					img-alt="The main hallway in the only map of the game"
 					src-link="https://github.com/craftablescience/checking-out"
 					play-link="https://craftablescience.itch.io/checking-out"></project-card>
+				<project-card
+					heading="Steins;Gate VR Laboratory"
+					subheading="March 2020"
+					description="This is a game for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
+					img-src="images/game-dev/steins_gate_vr.webp"
+					img-alt="Steins;Gate laboratory model in the Unity game engine editor"
+					src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 				<project-card
 					heading="OpenTK Game Engine"
 					subheading="March 2021"
@@ -192,13 +206,6 @@
 					img-alt="A screenshot of Godot Puzzlemaker running"
 					src-link="https://github.com/craftablescience/GodotPuzzlemaker"
 					play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
-				<project-card
-					heading="Steins;Gate VR Laboratory"
-					subheading="March 2020"
-					description="This is an application for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
-					img-src="images/game-dev/steins_gate_vr.webp"
-					img-alt="Steins;Gate laboratory model in the Unity game engine editor"
-					src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 			</section>
 
 			<section id="hackathons" class="full-width">
@@ -220,6 +227,20 @@
 				<div class="card-header">
 					<h2 class="align-center" tabindex="0">libraries</h2>
 				</div>
+				<project-card
+					heading="Source Pretty Parsers (sourcepp)"
+					subheading="December 2023"
+					description="Several modern C++20 libraries for sanely parsing Valve formats, rolled into one big repository. Supports reading DMX (DataModel eXchange) binary files, FGD (Forge GameData) files, Source engine models (MDL, VTX, VVD, etc.), and VMF (Valve Map Format) files. Emphasis is put on user experience, and making the parsers as easy to work with as possible. More formats will be added in the future."
+					img-src="images/libraries/sourcepp.webp"
+					img-alt="A preview of a DMX file in VPKEdit, which uses the sourcepp parser collection"
+					src-link="https://github.com/craftablescience/sourcepp"></project-card>
+				<project-card
+					heading="BufferStream"
+					subheading="January 2024"
+					description="A header-only C++20 library to quickly read objects from a buffer. It wraps around buffers stored at pointers, in C arrays, and in any STL container that stores contiguous data. Overflow exceptions when attempting to seek or read out-of-bounds are enabled by default. Reading values stored in big-endian is possible as well. This library is used by several of my other projects."
+					img-src="images/libraries/bufferstream.webp"
+					img-alt="A screenshot of some example code using BufferStream"
+					src-link="https://github.com/craftablescience/BufferStream"></project-card>
 				<project-card
 					heading="armcomp"
 					subheading="October 2022"
