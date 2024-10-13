@@ -2,18 +2,16 @@
 /* Global variables and styles */
 /*******************************/
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=EB+Garamond&display=swap');
-
 :root {
 	/* If you change this color, also change the theme color in index.html -> head */
 	--page-background: rgb(0, 11, 80);
 	--page-background-dot: #19167a;
 	--page-background-dot-size: 5%;
-	--card-background-1: rgb(21, 70, 128);
-	--card-background-2: rgb(11, 61, 110);
-	--color-text: white;
-	--color-text-dark: #eee;
-	--color-text-highlight: rgb(249, 160, 255);
+	--card-background-1: rgb(158, 175, 219);
+	--card-background-2: rgb(135, 147, 206);
+	--color-text: black;
+	--color-text-dark: #111;
+	--color-text-highlight: rgba(96, 64, 112, 0.7);
 	--text-font: "JetBrains Mono", monospace;
 	--text-size: 1.2rem;
 	--margin-size: 24px;
@@ -55,7 +53,7 @@ body {
 	background-position: 8px 8px;
 
 	color: var(--color-text);
-	font-family: var(--text-font);
+	font-family: var(--text-font), monospace;
 
 	margin: var(--margin-size) 0 0 0;
 	padding: 0;

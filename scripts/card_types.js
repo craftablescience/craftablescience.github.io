@@ -5,23 +5,25 @@ customElements.define("project-card", class extends HTMLElement {
 		if (this.hasAttribute("has-disclaimer")) {
 			disclaimer = "<em>I am a member of a team that works on this project.</em> ";
 		} else if (this.hasAttribute("has-past-disclaimer")) {
-			disclaimer = "<em>I am a member of a team that worked on this project.</em> ";
+			disclaimer = "<em>I was a member of a team that worked on this project.</em> ";
 		}
 
 		let sourceUrl = "";
 		if (this.hasAttribute("src-link")) {
-			sourceUrl = `<a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">View Source</a>`;
+			sourceUrl = `<a href="${this.getAttribute("src-link")}" target="_blank" rel="noopener noreferrer">Source Code</a>`;
 		}
 
 		let projectUrl = "";
-		if (this.hasAttribute("mod-link")) {
-			projectUrl = `<a href="${this.getAttribute("mod-link")}" target="_blank" rel="noopener noreferrer">Download From CurseForge</a>`;
+		if (this.hasAttribute("cf-link")) {
+			projectUrl = `<a href="${this.getAttribute("cf-link")}" target="_blank" rel="noopener noreferrer">CurseForge Page</a>`;
+		} else if (this.hasAttribute("nexus-link")) {
+			projectUrl = `<a href="${this.getAttribute("nexus-link")}" target="_blank" rel="noopener noreferrer">Nexus Mods Page</a>`;
 		} else if (this.hasAttribute("play-link")) {
 			projectUrl = `<a href="${this.getAttribute("play-link")}" target="_blank" rel="noopener noreferrer">Play Game</a>`;
 		} else if (this.hasAttribute("steam-link")) {
-			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">View Steam Store Page</a>`;
+			projectUrl = `<a href="${this.getAttribute("steam-link")}" target="_blank" rel="noopener noreferrer">Steam Store Page</a>`;
 		} else if (this.hasAttribute("custom-link")) {
-			projectUrl = `<a href="${this.getAttribute("custom-link")}" target="_blank" rel="noopener noreferrer">View Project Details</a>`;
+			projectUrl = `<a href="${this.getAttribute("custom-link")}" target="_blank" rel="noopener noreferrer">Project Details</a>`;
 		}
 
 		this.innerHTML = `
@@ -49,18 +51,19 @@ customElements.define("project-card", class extends HTMLElement {
 
 	static get observedAttributes() {
 		return [
-			"heading",
-			"subheading",
-			"description",
-			"has-disclaimer",
-			"has-past-disclaimer",
-			"img-src",
-			"img-alt",
-			"src-link",
-			"mod-link",
-			"play-link",
-			"steam-link",
-			"custom-link",
+			"heading",             // Name
+			"subheading",          // Timestamp
+			"description",         // Description
+			"has-disclaimer",      // Work on a team
+			"has-past-disclaimer", // Worked on a team
+			"img-src",             // Image
+			"img-alt",             // Image alt
+			"src-link",            // Source Code
+			"cf-link",             // CurseForge Page
+			"nexus-link",          // Nexus Mods Page
+			"play-link",           // Play Game
+			"steam-link",          // Steam Store Page
+			"custom-link",         // Project Details
 		];
 	}
 

@@ -1,18 +1,6 @@
 const Accessibility = {
 	'Default': {
 		color_card: {
-			'--card-background-1': 'rgb(21, 70, 128)',
-			'--card-background-2': 'rgb(11, 61, 110)',
-			'--color-text': 'white',
-			'--color-text-dark': '#eee',
-			'--color-text-highlight': 'rgb(249, 160, 255)',
-		},
-		font: {
-			'--text-font': '"JetBrains Mono", monospace',
-		},
-	},
-	'Accessible': {
-		color_card: {
 			'--card-background-1': 'rgb(158, 175, 219)',
 			'--card-background-2': 'rgb(135, 147, 206)',
 			'--color-text': 'black',
@@ -20,9 +8,21 @@ const Accessibility = {
 			'--color-text-highlight': 'rgba(96, 64, 112, 0.7)',
 		},
 		font: {
+			'--text-font': '"JetBrains Mono", monospace',
+		},
+	},
+	'Accessible': {
+		color_card: {
+			'--card-background-1': 'rgb(21, 70, 128)',
+			'--card-background-2': 'rgb(11, 61, 110)',
+			'--color-text': 'white',
+			'--color-text-dark': '#eee',
+			'--color-text-highlight': 'rgb(249, 160, 255)',
+		},
+		font: {
 			'--text-font': '"EB Garamond", Helvetica, Arial, serif',
-		}
-	}
+		},
+	},
 };
 
 let current_card_color = 'Default';
@@ -34,7 +34,7 @@ function toggleCardColor() {
 	for (const [variable, value] of Object.entries(Accessibility[current_card_color].color_card)) {
 		root.style.setProperty(variable, value);
 	}
-	const label = document.getElementById('accessibility-black-text-label');
+	const label = document.getElementById('accessibility-white-text-label');
 	if (current_card_color === 'Default') {
 		label.innerHTML = label.innerHTML.replace('[x]', '[ ]');
 	} else {
@@ -57,7 +57,7 @@ function toggleFont() {
 }
 
 // Call the functions if they're checked
-if (document.getElementById('accessibility-black-text').checked) {
+if (document.getElementById('accessibility-white-text').checked) {
 	toggleCardColor();
 }
 if (document.getElementById('accessibility-serif-font').checked) {
