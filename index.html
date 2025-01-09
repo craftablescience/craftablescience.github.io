@@ -32,14 +32,15 @@
 				<aside id="info-panel" class="card-bg align-center">
 					<img id="profile-picture" src="images/about/profile_picture.png" alt="My profile picture on most platforms." />
 					<div id="contact-names" class="has-vars">
-						<!--<h1>$FULLNAME</h1>-->
+						<h1>$FULLNAME</h1>
 						<h2 class="align-center">@$USERNAME</h2>
 					</div>
 					<div id="contact-links">
 						<a href="https://github.com/craftablescience" target="_blank" rel="noopener noreferrer">github</a>
 						<a href="mailto:lauralewisdev@gmail.com">email</a>
+						<a href="https://craftablescience.info/blog">blog</a>
 						<a href="https://www.linkedin.com/in/craftablescience" target="_blank" rel="noopener noreferrer">linkedin</a>
-						<a href="https://craftablescience.tumblr.com" target="_blank" rel="noopener noreferrer">tumblr</a>
+						<a href="https://bsky.app/profile/craftablescience.info" target="_blank" rel="noopener noreferrer">bluesky</a>
 						<a href="https://www.youtube.com/@craftablescience" target="_blank" rel="noopener noreferrer">youtube</a>
 					</div>
 				</aside>
@@ -75,7 +76,7 @@
 					<h2 class="align-center" tabindex="0">about</h2>
 				</div>
 				<div class="card has-vars">
-					<p>Hi! I'm a nerdy person who loves C++ a little too much for their own good.</p>
+					<p>Hi! I'm a nerdy person who loves C++ a little too much for her own good.</p>
 				</div>
 				<details class="card">
 					<summary>Programming languages I know</summary>
@@ -138,7 +139,7 @@
 					</table>
 				</details>
 				<div class="card">
-					<p>Listed below are some projects that I work on, or have worked on in the past. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition, SourcePP, and VPKEdit on a daily basis. Most other projects are either in maintenance mode or considered complete.</p>
+					<p>Listed below are some projects that I work on, or have worked on in the past. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition, SourcePP, and VPKEdit on a daily basis. Most other projects are either in maintenance mode, considered complete, or abandoned.</p>
 					<p>The subheading lists when I began working on a project, it doesn't mean I didn't continue working on it later (which is the case for several projects!)</p>
 				</div>
 			</section>
@@ -150,7 +151,7 @@
 				<project-card
 					heading="VPKEdit"
 					subheading="August 2023"
-					description="VPKEdit is an open source tool that can create, open, extract from and preview the contents of several different archive formats (files that contain other files). As of version 4.3.1 it supports 11 archive formats, and can preview audio formats, text formats, image formats, compiled Source engine textures, models, DMX files, and PPL files without having to extract those files onto disk. Incremental file operations like adding or removing files are supported for writable formats. There is also a CLI version of the application that replicates its basic functionality. Installers and standalone versions are compiled for Windows 7-11 and Linux. The tool is powered by an open-source C++20 collection of libraries called SourcePP, which I created for this and other projects."
+					description="VPKEdit is an open source tool that can create, open, extract from and preview the contents of several different archive formats (files that contain other files). As of version 4.4.0 it supports 14 archive formats, and can preview audio formats, text formats, image formats, compiled Source engine textures, models, DMX files, and PPL files without having to extract those files onto disk. Incremental file operations like adding or removing files are supported for writable formats. There is also a CLI version of the application that replicates its basic functionality. Installers and standalone versions are compiled for Windows 7-11 and Linux. The tool is powered by an open-source C++20 collection of libraries called SourcePP, which I created for this and other projects."
 					img-src="/images/game-tooling/vpkedit.webp"
 					img-alt="A screenshot of the VPKEdit application displaying a wireframe render of a saucepan."
 					src-link="https://github.com/craftablescience/VPKEdit"></project-card>
@@ -229,7 +230,7 @@
 				<project-card
 					heading="Source Pretty Parsers"
 					subheading="December 2023"
-					description="Several modern C++20 libraries for sanely parsing Valve formats, rolled into one big repository. Supports reading 22 and writing 16 file formats as of October 2024. Emphasis is put on user experience, and making the parsers as easy to work with as possible, while still being as fast or faster than the competition (if any competition exists). This library collection is still actively worked on and support for more file formats will be added in the future."
+					description="Several modern C++20 libraries for sanely parsing Valve formats, rolled into one big repository. Supports reading 37 and writing 25 file formats as of January 2025. Emphasis is put on user experience, and making the parsers as easy to work with as possible, while still being as fast or faster than the competition (if any competition exists). Wrappers for certain components exist for C, C#, and Python, with Python bindings published to PyPI under the sourcepp project. This library collection is still actively worked on and support for more file formats will be added in the future."
 					img-src="/images/libraries/sourcepp.webp"
 					img-alt="A preview of a DMX file in VPKEdit, which uses the sourcepp parser collection."
 					src-link="https://github.com/craftablescience/sourcepp"

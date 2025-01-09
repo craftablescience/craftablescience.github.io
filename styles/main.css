@@ -249,19 +249,15 @@ header {
 }
 
 #language-table > tbody > tr:nth-child(odd) {
-	background-color: #4b1073;
+	background-color: #937ca1;
 }
 
 #language-table > tbody > tr:nth-child(even) {
-	background-color: #59108c;
-}
-
-#language-table > tbody > tr:not(:last-of-type) {
-	border-bottom: 3px solid #57009180;
+	background-color: #7f6591;
 }
 
 #language-table > tbody > tr > td:nth-child(even) {
-	background-color: #00000018;
+	background-color: #00000008;
 }
 
 
