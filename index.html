@@ -50,10 +50,10 @@
 					<a href="#game-tooling">game tooling</a>
 					<a href="#game-dev">game dev</a>
 					<a href="#libraries">libraries</a>
-					<a href="#hackathons">hackathons</a>
+					<a href="#research">research</a>
+					<a href="#college-projects">college projects</a>
 					<a href="#discord">discord</a>
 					<a href="#game-mods">game mods</a>
-					<a href="#research">research</a>
 				</nav>
 
 				<aside id="accessibility-panel" class="nav-list flex-horizontal flex-center card-bg align-center">
@@ -265,16 +265,51 @@
 					src-link="https://github.com/craftablescience/LibLoader"></project-card>
 			</section>
 
-			<section id="hackathons" class="full-width">
+			<section id="research" class="full-width">
 				<div class="card-header">
-					<h2 class="align-center" tabindex="0">hackathons</h2>
+					<h2 class="align-center" tabindex="0">research</h2>
 				</div>
+				<project-card
+					heading="Assessing the Utility of LLMs in Generating Effective Student Feedback"
+					subheading="Summer 2023"
+					description="High quality feedback can have a significant effect on student learning. However, individualized instructor-authored feedback cannot scale to the high student demand of understaffed modern CS courses. Pedal is an autograding tool for semi-automated feedback on student code via instructor-authored control scripts (ICS). We created a new tool for Pedal to generate feedback with the GPT API without any additional control logic. We took anonymized student code submissions from 9 assignments across 9 students in a CS1 course for a total of 81 novice programs. We captured feedback in two ways: once with the existing ICS for the problem, and then with the GPT Pedal tool. The feedback on these submissions were judged by novice programmers twice to calculate a statistical measurement of their agreement. Both the regular Pedal ICSes and GPT-4 performed well across all categories. GPT-4 shows promise, scoring slightly better than Pedal in most categories."
+					has-past-disclaimer
+					img-src="/images/research/2023_research.webp"
+					img-alt="My project poster."
+					src-link="https://github.com/THRALLab/pedal-kennel/tree/exp/openai-integration"></project-card>
+				<project-card
+					heading="Antivirus Database Scanner"
+					subheading="Summer 2019"
+					description="The aim of this project was to see the distribution of protection types between antiviruses, and measure how many threats, risks, and vulnerabilities each one had stored in their public database. The antiviruses studied were Symantec, Kaspersky, and TrendMicro. The collection of data was undertaken by a custom Python program, and the data was analyzed and charted by another Python program. This research was done for an internship at Delaware State University, under Dr. Kul, in the summer of 2019."
+					img-src="/images/research/2019_research.webp"
+					img-alt="My project display board."
+					src-link="https://github.com/craftablescience/Antivirus-Database-Scanner"></project-card>
+				<project-card
+					heading="Analyzing Spectra of LEDs"
+					subheading="Summer 2018"
+					description="In this project, I measured the spectra of a large amount of LEDs, for science! The LED colors were white, red, blue, yellow, and green. The data gathered was over 2 dimensions, but using Principal Component Analysis I could reduce it to a 2D scatter plot, to visualize the findings. The data shows that each LED has a slightly different spectra due to small manufacturing differences, meaning in the future they could be used as a secure physical key. This research was done for an internship at Delaware State University, under Dr. Markushin, in the summer of 2018."
+					img-src="/images/research/2018_research.webp"
+					img-alt="My project display board."
+					src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
+			</section>
+
+			<section id="college-projects" class="full-width">
+				<div class="card-header">
+					<h2 class="align-center" tabindex="0">college projects</h2>
+				</div>
+				<project-card
+					heading="UDelivery"
+					subheading="September 2023"
+					description="This was a year-long capstone project designed to prove our skills by having us work on real-world projects the university would otherwise need to hire contractors for. We were actively paying the university to do their work, but in the end it was a fantastic learning experience, so I have no complaints. I worked on a 6-person team to create an iOS app that was planned to send restaurant orders to a small autonomous vehicle, so these orders could be delivered to a more remote part of campus. Specifically I worked on the frontend of the app, which used Flutter for cross-platform development. We were able to finish the app's visual features, such as an account system, checkout, and order listing, but never directly connected it to the autonomous vehicle. We presented our work at the 60th CIS Anniversary Celebration, alongside some of our peers and their respective capstone projects."
+					has-past-disclaimer
+					img-src="/images/college-projects/udelivery.webp"
+					img-alt="The logo for the UDelivery project. The brick-shaped autonomous vehicle is shown with a fancy dinner plate cover on top."></project-card>
 				<project-card
 					heading="GO-DE"
 					subheading="April 2023"
-					description="GO-DE is a full-stack, social-media-like site where registered users are given an expansive list of interesting places in Delaware to visit, ranging from parks and beaches to landmarks and historic sites. Users can mark these places as visited and comment on how their visit went/any thoughts and other remarks, and aim to visit every location that is on our list. They can also track their progress of places visited on the home page of the site, and on their profile page. Users can view the profiles/activities/progress of other users, whose profiles contain their recent activity and progress in visiting every location. They can even follow each other and get updates on friends' activity in a feed on the main page. I worked on the frontend of the project, first making mockups of the desired UI in Figma, then translating those mockups into custom React components with a mix of Bootstrap and custom CSS for styling."
+					description="Created at the 2023 HenHacks hackathon within a 24-hour time frame, GO-DE is a full-stack, social-media-like site where registered users are given an expansive list of interesting places in Delaware to visit, ranging from parks and beaches to landmarks and historic sites. Users can mark these places as visited and comment on how their visit went/any thoughts and other remarks, and aim to visit every location that is on our list. They can also track their progress of places visited on the home page of the site, and on their profile page. Users can view the profiles/activities/progress of other users, whose profiles contain their recent activity and progress in visiting every location. They can even follow each other and get updates on friends' activity in a feed on the main page. I worked on the frontend of the project, first making mockups of the desired UI in Figma, then translating those mockups into custom React components with a mix of Bootstrap and custom CSS for styling."
 					has-past-disclaimer
-					img-src="/images/hackathons/go-de.webp"
+					img-src="/images/college-projects/go-de.webp"
 					img-alt="A page where you can submit information about a place in Delaware you visited."
 					src-link="https://github.com/sbrugel/go-de"
 					custom-link="https://devpost.com/software/go-de"></project-card>
@@ -360,48 +395,6 @@
 					img-alt="A rocket I modelled for Interstellar: Exoplanets."
 					src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
 					cf-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
-			</section>
-
-			<section id="research" class="full-width">
-				<div class="card-header">
-					<h2 class="align-center" tabindex="0">research</h2>
-				</div>
-				<project-card
-					heading="Assessing the Utility of LLMs in Generating Effective Student Feedback"
-					subheading="Summer 2023"
-					description="High quality feedback can have a significant effect on student learning. However, individualized instructor-authored feedback cannot scale to the high student demand of understaffed modern CS courses. Pedal is an autograding tool for semi-automated feedback on student code via instructor-authored control scripts (ICS). We created a new tool for Pedal to generate feedback with the GPT API without any additional control logic. We took anonymized student code submissions from 9 assignments across 9 students in a CS1 course for a total of 81 novice programs. We captured feedback in two ways: once with the existing ICS for the problem, and then with the GPT Pedal tool. The feedback on these submissions were judged by novice programmers twice to calculate a statistical measurement of their agreement. Both the regular Pedal ICSes and GPT-4 performed well across all categories. GPT-4 shows promise, scoring slightly better than Pedal in most categories."
-					has-past-disclaimer
-					img-src="/images/research/2023_research.webp"
-					img-alt="My project poster."
-					src-link="https://github.com/THRALLab/pedal-kennel/tree/exp/openai-integration"></project-card>
-				<project-card
-					heading="Antivirus Database Scanner"
-					subheading="Summer 2019"
-					description="The aim of this project was to see the distribution of protection types between antiviruses, and measure how many threats, risks, and vulnerabilities each one had stored in their public database. The antiviruses studied were Symantec, Kaspersky, and TrendMicro. The collection of data was undertaken by a custom Python program, and the data was analyzed and charted by another Python program. This research was done for an internship at Delaware State University, under Dr. Kul, in the summer of 2019."
-					img-src="/images/research/2019_research.webp"
-					img-alt="My project display board."
-					src-link="https://github.com/craftablescience/Antivirus-Database-Scanner"></project-card>
-				<project-card
-					heading="Analyzing Spectra of LEDs"
-					subheading="Summer 2018"
-					description="In this project, I measured the spectra of a large amount of LEDs, for science! The LED colors were white, red, blue, yellow, and green. The data gathered was over 2 dimensions, but using Principal Component Analysis I could reduce it to a 2D scatter plot, to visualize the findings. The data shows that each LED has a slightly different spectra due to small manufacturing differences, meaning in the future they could be used as a secure physical key. This research was done for an internship at Delaware State University, under Dr. Markushin, in the summer of 2018."
-					img-src="/images/research/2018_research.webp"
-					img-alt="My project display board."
-					src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
-				<project-card
-					heading="Science Fair 2020 (VR Dual-Eye Camera Feed)"
-					subheading="January 2020"
-					description="My submission for the science fair in 2020 was a security device that could add a sense of depth to footage, viewable in the Oculus Quest VR headset. I used two Raspberry Pi's with camera modules attached, to livestream their camera feeds over the Internet. Then, I created a Unity application to capture the data and relay it to each lens of the headset. Ultimately, however, it was a failure, as the two camera streams did not merge together in the headset as I had hoped. Instead it just gives the user the power to see cross-eyed."
-					img-src="/images/research/2020_sciencefair.webp"
-					img-alt="A picture of the camera setup."
-					src-link="https://github.com/craftablescience/SecurityCameraWithDepth"></project-card>
-				<project-card
-					heading="Science Fair 2019 (Automated Cat Feeder)"
-					subheading="January 2019"
-					description="My submission for the science fair in 2019 was an automated cat feeder. It was powered by a LEGO motor attached to a Raspberry Pi, which turned a knob on a cheap manual cat feeder. It could be triggered automatically at a set time, or manually from an android app."
-					img-src="/images/research/2019_sciencefair.webp"
-					img-alt="A picture of the cat feeder/"
-					src-link="https://github.com/craftablescience/Science-Fair-Projects"></project-card>
 			</section>
 
 			<footer class="card-header">
