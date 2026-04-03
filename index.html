@@ -6,23 +6,22 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="craftablescience" />
-		<meta name="description" content="my portfolio, showcasing all my projects, and including contact information" />
+		<meta name="description" content="my website" />
 
-		<meta name="og:title" content="craftablescience | portfolio" />
-		<meta name="og:description" content="my portfolio, showcasing all my projects, and including contact information" />
-		<meta name="og:image" content="https://craftablescience.info/images/about/profile_picture.webp" />
-		<meta name="og:image:secure_url" content="https://craftablescience.info/images/about/profile_picture.webp" />
-		<meta name="og:image:type" content="image/webp" />
-		<meta name="og:image:alt" content="My profile picture on most platforms." />
+		<meta name="og:title" content="craftablescience" />
+		<meta name="og:description" content="my website" />
+		<meta name="og:image" content="https://craftable.science/images/about/profile_picture.png" />
+		<meta name="og:image:secure_url" content="https://craftable.science/images/about/profile_picture.png" />
+		<meta name="og:image:type" content="image/png" />
+		<meta name="og:image:alt" content="my profile picture" />
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="styles/fonts.css" />
 		<link rel="stylesheet" type="text/css" href="styles/main.css" />
 
-		<meta name="theme-color" content="rgb(0, 11, 80)" />
+		<meta name="theme-color" content="rgb(0, 90, 90)" />
 
 		<script src="scripts/card_types.js" type="text/javascript"></script>
-		<script src="scripts/replace_vars.js" type="text/javascript" defer></script>
 		<script src="scripts/accessibility.js" type="text/javascript" defer></script>
 	</head>
 
@@ -31,16 +30,16 @@
 			<div class="sticky">
 				<aside id="info-panel" class="card-bg align-center">
 					<img id="profile-picture" src="images/about/profile_picture.png" alt="My profile picture on most platforms." />
-					<div id="contact-names" class="has-vars">
-						<h1>$FULLNAME</h1>
-						<h2 class="align-center">@$USERNAME</h2>
+					<div id="contact-names">
+						<h1>Laura Lewis</h1>
+						<h2 class="align-center">@craftablescience</h2>
 					</div>
 					<div id="contact-links">
-						<a href="https://github.com/craftablescience" target="_blank" rel="noopener noreferrer">github</a>
+						<a href="https://craftable.science/blog">blog</a>
+						<a href="https://bsky.app/profile/craftable.science" target="_blank" rel="noopener noreferrer">bluesky</a>
 						<a href="mailto:lauralewisdev@gmail.com">email</a>
-						<a href="https://craftablescience.info/blog">blog</a>
+						<a href="https://github.com/craftablescience" target="_blank" rel="noopener noreferrer">github</a>
 						<a href="https://www.linkedin.com/in/craftablescience" target="_blank" rel="noopener noreferrer">linkedin</a>
-						<a href="https://bsky.app/profile/craftablescience.info" target="_blank" rel="noopener noreferrer">bluesky</a>
 						<a href="https://www.youtube.com/@craftablescience" target="_blank" rel="noopener noreferrer">youtube</a>
 					</div>
 				</aside>
@@ -51,17 +50,11 @@
 					<a href="#game-dev">game dev</a>
 					<a href="#libraries">libraries</a>
 					<a href="#research">research</a>
-					<a href="#college-projects">college projects</a>
 					<a href="#discord">discord</a>
 					<a href="#game-mods">game mods</a>
 				</nav>
 
 				<aside id="accessibility-panel" class="nav-list flex-horizontal flex-center card-bg align-center">
-					<p class="text-underline text-bold">accessibility</p>
-					<div>
-						<label id="accessibility-white-text-label" for="accessibility-white-text">white text <span class="text-monospace">[ ]</span></label>
-						<input type="checkbox" id="accessibility-white-text" onclick="toggleCardColor()">
-					</div>
 					<div>
 						<label id="accessibility-serif-font-label" for="accessibility-serif-font">serif font <span class="text-monospace">[ ]</span></label>
 						<input type="checkbox" id="accessibility-serif-font" onclick="toggleFont()">
@@ -76,71 +69,10 @@
 					<h2 class="align-center" tabindex="0">about</h2>
 				</div>
 				<div class="card has-vars">
-					<p>Hi! I'm a nerdy person who loves C++ a little too much for her own good.</p>
-				</div>
-				<details class="card">
-					<summary>Programming languages I know</summary>
-					<table id="language-table" class="shadow-border">
-						<tr>
-							<td>2014</td>
-							<td>Python</td>
-							<td>The first real programming language I ever learned. I used <a href="https://codingbat.com/python" target="_blank" rel="noopener noreferrer">CodingBat</a> to practice, and didn't do anything complex with it until 2016 when I made a voice-activated computer assistant.</td>
-						</tr>
-						<tr>
-							<td>2014</td>
-							<td>HTML5/CSS3</td>
-							<td>It may not be a programming language but it's important enough to note. I was wholly self-taught. Web development interested me, but it was never something I wanted to focus a career on. I used that knowledge to make this website and a website for a school club.</td>
-						</tr>
-						<tr>
-							<td>????</td>
-							<td>JavaScript</td>
-							<td>JavaScript slowly leaked into my head over time. I can't recall a specific time I was actively learning it, but I can use it well now.</td>
-						</tr>
-						<tr>
-							<td>2017</td>
-							<td>Java</td>
-							<td>I maintain that this is objectively not a good language, but the JVM backing it is good software. This was the first language I learned that used braces and semicolons and ignored indentation, so it was a rude awakening to "real languages" different from Python.</td>
-						</tr>
-						<tr>
-							<td>2019</td>
-							<td>GDScript</td>
-							<td>GDScript is the custom scripting solution for the Godot Game Engine, which I began using in 2019. It is similar to Python, but with more game dev-specific syntax and native types. Godot is a game engine that I have used for a long time (without any finished games to show for it).</td>
-						</tr>
-						<tr>
-							<td>2021</td>
-							<td>C#</td>
-							<td>It's Java but if Microsoft forked it and implemented boatloads of nice stuff. Pretty fun language!</td>
-						</tr>
-						<tr>
-							<td>2021</td>
-							<td>C++</td>
-							<td>I delayed learning this language because I feared it would be difficult. It was, but it was also very liberating and enjoyable to use. Still my favorite language.</td>
-						</tr>
-						<tr>
-							<td>2021</td>
-							<td>C</td>
-							<td>I prefer C++.</td>
-						</tr>
-						<tr>
-							<td>2022</td>
-							<td>TypeScript</td>
-							<td>Much nicer than plain JavaScript. I find it funny how people initially liked dynamic typing, and then projects to add static typing back into dynamically typed languages became popular as time went on.</td>
-						</tr>
-						<tr>
-							<td>2022</td>
-							<td>ARM Assembly</td>
-							<td>Can I say I'm proficient in writing assembly? No, but I do know what compiled languages compile into and how to read assembly.</td>
-						</tr>
-						<tr>
-							<td>2023</td>
-							<td>Rust</td>
-							<td>Rust is fast on its way to becoming my favorite language. Macros, enums, traits, very cool stuff! The package system is leagues ahead of what I put up with with C++.</td>
-						</tr>
-					</table>
-				</details>
-				<div class="card">
-					<p>Listed below are some projects that I work on, or have worked on in the past. Besides some projects that are currently unlisted, I work on Portal 2: Community Edition, SourcePP, and VPKEdit on a daily basis. Most other projects are either in maintenance mode, considered complete, or abandoned.</p>
-					<p>The subheading lists when I began working on a project, it doesn't mean I didn't continue working on it later (which is the case for several projects!)</p>
+					<p>
+						Hi! I love C++ and I work on various forms of tooling, sometimes with a profit incentive but usually not.
+						Feel free to contact me at the links on the left.
+					</p>
 				</div>
 			</section>
 
@@ -156,41 +88,12 @@
 					img-alt="A screenshot of the VPKEdit application displaying a wireframe render of a saucepan."
 					src-link="https://github.com/craftablescience/VPKEdit"></project-card>
 				<project-card
-					heading="VTF Thumbnailer"
-					subheading="September 2024"
-					description="Generates thumbnails for VTF (Valve Texture Format) files in your file explorer of choice on Windows and Linux. Also powered by SourcePP, in the libraries section."
-					img-src="/images/game-tooling/vtf-thumbnailer.webp"
-					img-alt="Several thumbnails of Valve Texture Files that are present in Portal 2's DLC2 folder. The miscellaneous collection includes several thumbs-ups and thumbs-downs in varying colors."
-					src-link="https://github.com/craftablescience/vtf-thumbnailer"></project-card>
-				<project-card
 					heading="SDK Launcher"
 					subheading="June 2024"
 					description="A minimal SDK launcher for Strata Source engine games. Displays a list of categories, which in turn display a list of executable actions. Actions can be a command, opening a folder in the user's file manager, or opening an Internet URL. The lists of actions are fully configurable with a JSON file, and three sample configurations are bundled with the application, one for each Strata Source game. The SDK Launcher also includes a mod creation wizard to quickly set up mods, which is also configurable in the JSON config file. This application is shipped with Portal 2: Community Edition."
 					img-src="/images/game-tooling/sdk_launcher.webp"
 					img-alt="A screenshot of the SDK Launcher open with the Portal 2: Community Edition config loaded."
 					src-link="https://github.com/StrataSource/sdk-launcher"></project-card>
-				<project-card
-					heading="Chira Engine"
-					subheading="June 2021"
-					description="Chira Engine is a game engine I have been working on for over two years. It was created to learn C++ and how game engines worked, and it taught me (and continues to teach me) a great deal about both of those subjects, as well as the CMake build system. Runs on Windows, Linux, and macOS, with Android support planned."
-					img-src="/images/game-tooling/chira_engine.webp"
-					img-alt="A screenshot of the editor present in Chira Engine. The editor UI was created by frequent contributor / collaborator Ashi."
-					src-link="https://github.com/craftablescience/ChiraEngine"></project-card>
-				<project-card
-					heading="OpenTK Game Engine"
-					subheading="March 2021"
-					description="This was my first foray into C#. I decided to build a simple game engine using OpenGL for the graphics, Bullet for physics, and FMOD for sound. It currently can create unlit meshes, physics objects, and has several demos in a separate C# project to showcase its functionality. All the engine features are as abstracted as possible."
-					img-src="/images/game-tooling/opentk_game_engine.webp"
-					img-alt="An animated recording of the physics demo included with the game engine."
-					src-link="https://github.com/craftablescience/OpenTKGameEngine"></project-card>
-				<project-card
-					heading="Godot Puzzlemaker"
-					subheading="October 2020"
-					description="This project aimed to create a quick and easy level editor for the Godot game engine, to make rapidly prototyping level layouts possible. It has a save/load system, supports custom textures and entities, and can export levels to the format used in Portal 2."
-					img-src="/images/game-tooling/godot_puzzlemaker.webp"
-					img-alt="A screenshot of Godot Puzzlemaker running."
-					src-link="https://github.com/craftablescience/GodotPuzzlemaker"
-					play-link="https://craftablescience.github.io/GodotPuzzlemaker"></project-card>
 			</section>
 
 			<section id="game-dev" class="full-width">
@@ -221,13 +124,6 @@
 					img-alt="A screenshot of the early stages of the game. The terminal on the left shows a user has entered the cowsay command. A cute pixel art cat is on the right explaining the current objective."
 					src-link="https://github.com/UD-S24-CISC374/final-project-beige"
 					play-link="https://ud-s24-cisc374.github.io/final-project-beige"></project-card>
-				<project-card
-					heading="Steins;Gate VR Laboratory"
-					subheading="March 2020"
-					description="This is a game for the Meta Quest VR headset, that recreates a location from one of my favorite TV shows in VR. I created most of it at the beginning of the Covid-19 quarantine, when I was stuck at home without many major responsibilities eating away at my free time. I wanted to advance my 3D modeling skill through practicing modeling household items, and I wanted to physically be inside the laboratory in the show. This project also includes a working CRT TV, so I can watch the TV show from inside the show."
-					img-src="/images/game-dev/steins_gate_vr.webp"
-					img-alt="Steins;Gate laboratory model in the Unity game engine editor."
-					src-link="https://github.com/craftablescience/Steins-Gate-VR-Scene"></project-card>
 			</section>
 
 			<section id="libraries" class="full-width">
@@ -256,13 +152,6 @@
 					img-src="/images/libraries/armcomp.webp"
 					img-alt="A comparison of armcomp code, versus the generated assembly."
 					src-link="https://github.com/craftablescience/armcomp"></project-card>
-				<project-card
-					heading="LibLoader"
-					subheading="December 2021"
-					description="This header-only library allows users to load and call functions from dynamic libraries (.DLL on Windows, .DYLIB/.SO on macOS, .SO on Linux). The call function returns a std::optional, in case the function was not found in the library or an error was encountered. It can be safely dereferenced to retrieve the returned value. If the function returns void, call will return void as well. It was created to interface with the Steam API without using proprietary headers, and so MSVC-compiled libraries would work with MinGW-compiled applications on Windows."
-					img-src="/images/libraries/libloader.webp"
-					img-alt="A screenshot of the LibLoader test code."
-					src-link="https://github.com/craftablescience/LibLoader"></project-card>
 			</section>
 
 			<section id="research" class="full-width">
@@ -277,42 +166,6 @@
 					img-src="/images/research/2023_research.webp"
 					img-alt="My project poster."
 					src-link="https://github.com/THRALLab/pedal-kennel/tree/exp/openai-integration"></project-card>
-				<project-card
-					heading="Antivirus Database Scanner"
-					subheading="Summer 2019"
-					description="The aim of this project was to see the distribution of protection types between antiviruses, and measure how many threats, risks, and vulnerabilities each one had stored in their public database. The antiviruses studied were Symantec, Kaspersky, and TrendMicro. The collection of data was undertaken by a custom Python program, and the data was analyzed and charted by another Python program. This research was done for an internship at Delaware State University, under Dr. Kul, in the summer of 2019."
-					img-src="/images/research/2019_research.webp"
-					img-alt="My project display board."
-					src-link="https://github.com/craftablescience/Antivirus-Database-Scanner"></project-card>
-				<project-card
-					heading="Analyzing Spectra of LEDs"
-					subheading="Summer 2018"
-					description="In this project, I measured the spectra of a large amount of LEDs, for science! The LED colors were white, red, blue, yellow, and green. The data gathered was over 2 dimensions, but using Principal Component Analysis I could reduce it to a 2D scatter plot, to visualize the findings. The data shows that each LED has a slightly different spectra due to small manufacturing differences, meaning in the future they could be used as a secure physical key. This research was done for an internship at Delaware State University, under Dr. Markushin, in the summer of 2018."
-					img-src="/images/research/2018_research.webp"
-					img-alt="My project display board."
-					src-link="https://github.com/craftablescience/2018-Research-LED-Spectra"></project-card>
-			</section>
-
-			<section id="college-projects" class="full-width">
-				<div class="card-header">
-					<h2 class="align-center" tabindex="0">college projects</h2>
-				</div>
-				<project-card
-					heading="UDelivery"
-					subheading="September 2023"
-					description="This was a year-long capstone project designed to prove our skills by having us work on real-world projects the university would otherwise need to hire contractors for. We were actively paying the university to do their work, but in the end it was a fantastic learning experience, so I have no complaints. I worked on a 6-person team to create an iOS app that was planned to send restaurant orders to a small autonomous vehicle, so these orders could be delivered to a more remote part of campus. Specifically I worked on the frontend of the app, which used Flutter for cross-platform development. We were able to finish the app's visual features, such as an account system, checkout, and order listing, but never directly connected it to the autonomous vehicle. We presented our work at the 60th CIS Anniversary Celebration, alongside some of our peers and their respective capstone projects."
-					has-past-disclaimer
-					img-src="/images/college-projects/udelivery.webp"
-					img-alt="The logo for the UDelivery project. The brick-shaped autonomous vehicle is shown with a fancy dinner plate cover on top."></project-card>
-				<project-card
-					heading="GO-DE"
-					subheading="April 2023"
-					description="Created at the 2023 HenHacks hackathon within a 24-hour time frame, GO-DE is a full-stack, social-media-like site where registered users are given an expansive list of interesting places in Delaware to visit, ranging from parks and beaches to landmarks and historic sites. Users can mark these places as visited and comment on how their visit went/any thoughts and other remarks, and aim to visit every location that is on our list. They can also track their progress of places visited on the home page of the site, and on their profile page. Users can view the profiles/activities/progress of other users, whose profiles contain their recent activity and progress in visiting every location. They can even follow each other and get updates on friends' activity in a feed on the main page. I worked on the frontend of the project, first making mockups of the desired UI in Figma, then translating those mockups into custom React components with a mix of Bootstrap and custom CSS for styling."
-					has-past-disclaimer
-					img-src="/images/college-projects/go-de.webp"
-					img-alt="A page where you can submit information about a place in Delaware you visited."
-					src-link="https://github.com/sbrugel/go-de"
-					custom-link="https://devpost.com/software/go-de"></project-card>
 			</section>
 
 			<section id="discord" class="full-width">
@@ -341,10 +194,9 @@
 					img-alt="A screenshot of the bot's Discord profile."
 					src-link="https://github.com/ChaosInitiative/p2ce-discord-bot"></project-card>
 				<project-card
-					class="has-vars"
 					heading="Discord Square Theme"
 					subheading="June 2021"
-					description="I was frustrated with the abundance of round elements in the Discord messaging platform, so I made a custom CSS theme to disable rounding on UI elements, excepting some SVGs that would be technically challenging to modify. I collaborated with my friend $HACK_FLUFFYSNAKE_LINK to remake several SVG icons to remove rounding, and replace them with CSS."
+					description="I was frustrated with the abundance of round elements in the Discord messaging platform, so I made a custom CSS theme to disable rounding on UI elements, excepting some SVGs that would be technically challenging to modify. I collaborated with my friend FluffySnake to remake several SVG icons to remove rounding, and replace them with CSS."
 					img-src="/images/discord/discord_square_theme.webp"
 					img-alt="A conversation I had on a public Discord server while writing the theme. Two users express their interest in the project as I complain how difficult it is to remove SVG masks without breaking the visuals of the entire application."
 					src-link="https://github.com/craftablescience/Discord-Square-Theme"></project-card>
@@ -378,23 +230,6 @@
 					img-alt="A screenshot of the external chat window the mod creates."
 					src-link="https://github.com/craftablescience/WindowedChat"
 					cf-link="https://www.curseforge.com/minecraft/mc-mods/windowed-chat"></project-card>
-				<project-card
-					heading="Minecraft Python Command API"
-					subheading="August 2020"
-					description="This mod aims to add a way for Python programs to run commands inside Minecraft. It allows users to run Python code from inside the game's chat or server console, scan for Python programs inside a preset directory, and run any program from the chat or console. These programs would then be able to modify the state of the game through custom functions included in the mod, like printing messages to the chat and console, or placing blocks within the world. I have created all the code for this mod, but it depends on the standalone Jython Java library to run the Python code, because the video game is written in Java."
-					img-src="/images/game-mods/jython_mc.webp"
-					img-alt="A screenshot displaying a Python file running in Minecraft."
-					src-link="https://github.com/craftablescience/minecraft-python-cmd-api"
-					cf-link="https://www.curseforge.com/minecraft/mc-mods/python-command-api"></project-card>
-				<project-card
-					heading="Interstellar: Exoplanets"
-					subheading="June 2020"
-					description="This mod aims to add other solar systems, planets, and moons to Minecraft. It is an add-on to another mod, Galacticraft. I have added a new rocket model, and sound registry code. I am currently working on bug fixes, and waiting for the original author to request other 3D models."
-					has-past-disclaimer
-					img-src="/images/game-mods/IEP.webp"
-					img-alt="A rocket I modelled for Interstellar: Exoplanets."
-					src-link="https://github.com/ReadOnly-Mods/Interstellar-Exoplanets"
-					cf-link="https://www.curseforge.com/minecraft/mc-mods/interstellar-exoplanets"></project-card>
 			</section>
 
 			<footer class="card-header">
